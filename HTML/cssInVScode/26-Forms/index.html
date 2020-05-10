@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 20%;
+            padding: 12px 15px 12px 50px;
+            /*soldan 50px verelimki background image teki search butonuyla input değeri yazarken üst üste binmesin*/
+            margin: 10px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            color: darkblue;
+        }
+        
+        input[type=text]:focus {
+            /*input butonuna tıkladığın zaman yani değer yazmaya başladığın zaman görünmesini istediğin csstir*/
+            background-color: aqua;
+            width: 100%;
+        }
+        
+        input[type=text] {
+            background-color: seashell;
+            background-image: url('search.png');
+            /*input içerisine buton eklemek istersek arkaplana resim ekleme css kodunu kullanabilirşz*/
+            background-repeat: no-repeat;
+            /*resmin defalarca kez input alanı içerisine koymaktansa sadece 1 kez koymasını istiyorsak eğer.*/
+            background-position: 10px 5px;
+            background-size: 30px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 120px;
+            border: 1px solid red;
+            font-size: 24px;
+            resize: none;
+            /*olurda yazılan yazı fazla gelirse sadece scroll bar açılmasını sağlar tekrar boyutlandırma yapmaz.*/
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 3px aquamarine solid;
+            border-radius: 10px;
+            background-color: bisque;
+        }
+        
+        input[type=button],
+        input[type=reset],
+        input[type=submit] {
+            padding: 16px 25px;
+            background-color: cornsilk;
+            color: black;
+            margin: 5px;
+            cursor: pointer;
+            /*buton üzerine gelince el işareti çıkar*/
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="FG">ADINIZI GİRİNİZ</label>
+        <input type="text" name="FG">
+        <label for="Omer">SOYADINIZI GİRİNİZ</label>
+        <input type="text" name="Omer">
+        <textarea>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam pariatur ducimus perspiciatis temporibus nulla et eveniet optio quam! Iste mollitia odit architecto laborum asperiores et aperiam necessitatibus quisquam doloribus ipsa. Non incidunt, sit expedita consequatur quod iste voluptatum ullam, quam quo, odit quis! Quos facere qui nemo, quasi necessitatibus maiores quam adipisci et sint id harum, quod iure nihil. Odit optio impedit reprehenderit quo explicabo itaque aut possimus nihil obcaecati?</textarea>
+        <select name="Country">
+         <option value="TR">Türkiye</option>
+         <option value="EN">England</option>
+         <option value="FR">Français</option>
+
+         <input type="button" value="Button">
+         <input type="reset" value="Button">
+         <input type="submit" value="Button">
+
+     </select>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            /*:: dan sonra gelenlere pseudo elemenetler denir örneğin first line bir elementtir*/
+            color: red;
+            font-variant: small-caps;
+        }
+        
+        p::first-letter {
+            font-size: xx-large;
+            color: darkblue;
+            font-style: oblique;
+        }
+        
+        p::after {
+            content: "Ömer FG";
+        }
+        
+        p::before {
+            content: "Başa yazalım";
+        }
+        
+        p::selection {
+            color: white;
+            background-color: darkmagenta;
+        }
+        /*normalde seçerken bunun defaultunu bilirsin ama bu şekilde gayet hoş oldu la :D */
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, cumque sit quod delectus asperiores ullam aliquam voluptatum dolores accusamus vitae illo sint? Illum cum voluptatibus aliquid veritatis consequuntur maiores eaque eius perferendis enim
+        quis nostrum voluptatum vitae repellendus nisi ratione adipisci, accusamus exercitationem quod ipsam! Delectus, doloremque quidem rerum, quasi veritatis laborum officiis amet numquam mollitia dolore eius suscipit esse, voluptatum necessitatibus
+        perferendis dolores eos eum in ab iusto dolor! Tenetur dolorum magnam, veritatis facere harum aperiam commodi porro doloribus assumenda perferendis voluptatum vel unde possimus deleniti distinctio ullam consequatur nemo fugit! Praesentium aperiam
+        laudantium quas deserunt similique nihil nisi!</p>
+</body>
+
+</html>

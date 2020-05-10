@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target] {
+            /*target olanlar için css*/
+            background-color: burlywood;
+        }
+        
+        a[target=blank] {
+            background-color: cadetblue;
+            /*belli bir targetı olanlar için css*/
+        }
+        
+        [title~=fg] {
+            /*başlık içerisinde herhangi bir yerde fg geçiyorsa ona bu css i uygula*/
+            text-decoration: none;
+        }
+        
+        [title|=Omer] {
+            /*Sadece ömer içerenler için  css*/
+            padding: 5px;
+        }
+        
+        [title ^=Om] {
+            /*Om ile başlıyorsa*/
+            color: red;
+        }
+        
+        [title $=er] {
+            /*sonunda er olanlar için css*/
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com" title="fg Omero">Google</a>
+    <a href="https://www.webtekno.com/" target="blank" title="fg">webtekno</a>
+    <a href="https://shiftdelete.net/" target="hedef" title="Omer">shiftdelete</a>
+    <a href="https://facebook.com/" target="face" title="Omer">facebook</a>
+    <a href="https://www.wikipedia.org/" target="link" title="Om">wikipedia</a>
+</body>
+
+</html>

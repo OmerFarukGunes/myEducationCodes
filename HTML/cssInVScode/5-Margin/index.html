@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+            margin-top: 100px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: aqua;
+            /*etiketler arası boşluk bırakmanı sağlar. */
+        }
+        
+        h2 {
+            margin: 100px 50px 100px 50px;
+            background-color: yellow;
+        }
+        
+        h1 {
+            margin: 100px 50px;
+            /* olurda değerler eşitse kısaltabilirsin illa 4 değer yazman gerekmez böylece üstten alttan 100 sağdan soldan 50 px margin bırakır.*/
+            background-color: blue;
+        }
+        
+        h3 {
+            width: 300px;
+            border: 1px solid brown;
+            margin: auto;
+            /* ekranın sağından ve solundan tam olarak ortalar.*/
+        }
+        
+        .FG {
+            margin-left: inherit;
+            /* ailesine ne verdiysen bunun içinde geçerli olsun*/
+        }
+        
+        h5 {
+            margin: 50px;
+        }
+        
+        h6 {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>margin özellikleri</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis delectus esse autem assumenda sit excepturi, hic cupiditate provident harum quidem ipsam veniam veritatis a! Aspernatur provident culpa totam obcaecati quo?</div>
+    <h2>böyle uzun uzun ne gerek var beee</h2>
+    <h3>sayfayı ortalayalım</h3>
+    <h4>inherit kullanımı</h4>
+    <div>
+        <p class="FG">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae iusto quaerat quam. Itaque labore nostrum ut totam cum quasi placeat consequatur, suscipit vitae laudantium repellendus ea, neque quibusdam in?
+        </p>
+    </div>
+    <!-- div parent p ise child-->
+    <h5>Komple web</h5>
+    <h6>Komple web</h6>
+    <!-- normalde h6 için 20 px boşluk vermeliydi yukarıya doğru ama h5 için biz 50 px verdiğimiz için aşağı doğru
+    büyük olan sayı neyse onu uygular.-->
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--her türlü cihazda düzgün olacak bir image gallery olmasını sağlamalıyız-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.gallery {
+            border: 1px solid rgba(184, 146, 179, 0.815);
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            background-color: aqua;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid black
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            width: 25%;
+            float: left;
+            padding: 0px 5px;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+            /*float sonrası oluşan yaslama hatalarını temizler*/
+        }
+        
+        @media only screen and(max-width:700px) {
+            .responsive {
+                max-width: 50%;
+            }
+        }
+        
+        @media onyle screen and(max-width: 500px) {}
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+
+
+        <div class="gallery">
+            <a target="_blank" href="1.jpg">
+                <img src="1.jpg" alt="yeni 1">
+            </a>
+            <div class="desc">
+                Güzel resim
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="2.jpg">
+                <img src="2.jpg" alt="yeni 2">
+            </a>
+            <div class="desc">
+                Güzel resim
+            </div>
+        </div>
+
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="3.jpg">
+                <img src="3.jpg" alt="yeni 3">
+            </a>
+            <div class="desc">
+                Güzel resim
+            </div>
+        </div>
+
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="4.jpg">
+                <img src="4.jpg" alt="yeni 4">
+            </a>
+            <div class="desc">
+                Güzel resim
+            </div>
+        </div>
+
+    </div>
+    <div class="clearFix"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum at ad molestias aperiam, dicta aliquam excepturi reprehenderit totam enim qui fuga numquam ullam a minus officia quis maiores asperiores. Quae saepe atque molestias ratione enim
+            esse aut perferendis amet quisquam molestiae soluta facere maxime facilis asperiores aliquid, velit libero culpa quia voluptates. Nihil animi qui, a quibusdam accusamus facere nostrum minima, explicabo veniam corrupti esse id pariatur temporibus
+            natus, libero minus impedit. Nisi quis sequi nulla quos quod tempore deleniti, vel eum eveniet sed ratione repudiandae earum cumque excepturi ex non, ullam provident minima fuga, voluptatibus dicta repellendus est! Totam?
+        </p>
+    </div>
+</body>
+
+</html>

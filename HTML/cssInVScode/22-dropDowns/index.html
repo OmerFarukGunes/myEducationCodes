@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fg {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+        
+        .dD-Content {
+            position: absolute;
+            display: none;
+            background-color: aqua;
+            min-width: 100px;
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 10px 12px;
+            margin: 5px;
+            font-size: 20px;
+        }
+        
+        .fg:hover .dD-Content {
+            /*en basic seviye dropdown menü bu şekildedir*/
+            display: block;
+        }
+        
+        .Drop {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        .Drop:hover .down {
+            display: block;
+        }
+        
+        .down {
+            position: absolute;
+            display: none;
+            background-color: aqua;
+            width: 85px;
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+            right: 0;
+        }
+        
+        .down a {
+            display: block;
+            padding: 5px;
+            color: white;
+            margin: 3px;
+            text-decoration: none;
+        }
+        
+        .down a:hover {
+            background-color: violet;
+        }
+        
+        .button {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hoverable Dropdown</h1>
+    <div class="fg">
+        <span>TIKLA</span>
+        <div class="dD-Content">
+            <p>Ömer FG</p>
+
+        </div>
+    </div>
+    <br>
+    <div class="Drop" style="float: right;">
+        <button class="button">
+            Links
+        </button>
+        <div class="down">
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Content">Contact</a>
+        </div>
+    </div>
+</body>
+
+</html>

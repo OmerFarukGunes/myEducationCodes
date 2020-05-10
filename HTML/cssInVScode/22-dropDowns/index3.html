@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Drop:hover .down {
+            display: block;
+        }
+        
+        .down {
+            position: absolute;
+            display: none;
+            background-color: aqua;
+            min-width: 200px;
+            min-height: 200px;
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .down a {
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .down a:hover {
+            background-color: violet;
+        }
+        
+        .fg {
+            padding: 20px;
+            font-size: 20px;
+            width: auto;
+            text-align: center;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            background-color: black;
+            overflow: hidden;
+        }
+        
+        li a:hover,
+        .Drop:hover .button {
+            /*virgül ve demektir*/
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li class="Drop">
+            <a href="javascript:void(0)" class="button">Dropdown</a>
+            <!--bu tıklanamazdır.-->
+            <div class="down">
+                <a href="#">Link</a>
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

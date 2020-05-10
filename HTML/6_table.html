@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- table a th ye ve td ye border verdik style tagında süslü parantezlerde css verebiliriz.-->
+	<title></title>
+	<style>
+		table,th,td{
+			border: 1px solid red; 
+		}
+		th,td{
+			padding: 15px; 
+		}
+		th{
+			text-align: left;
+		}
+		table{
+			border-spacing: 15px;
+		}
+	</style>
+</head> <!-- tabloya padding ile 15 px açıklık getirdik tablo ferahladı. tablonun başlıklarını da sola yasladık.borderlara arası 15px de koyduk. border-spacing ile-->
+<body>
+<table style ="width : 100%"> <!-- 100% yapınca tüm ekranı kaplamasını sağlarsın tablonun-->
+	<caption> Öğrenci Listesi</caption><!-- tablo ismi-->
+	<tr>
+		<th>Ad</th>  <!-- başlıklardır burnlar yani sütünlar--> 
+		<th>Soyad</th>
+		<th>Yaş</th>
+	</tr>
+	<tr> <!-- bunlarda satırlardır-->
+		<td rowspan="2">Ömer</td>  <!-- rowspan ile de ismi iki satır yer kaplatabilirsin -->
+		<td colspan ="2">Güneş</td> <!-- colspan ile 2 sütunluk yer kaplayabiliriz.-->
+	</tr>
+	<tr>
+		<td>Güneş</td>
+		<td>42</td>
+	</tr>
+</table>
+</body>
+</html>

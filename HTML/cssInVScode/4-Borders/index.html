@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border styles</title>
+    <style>
+        .dotted {
+            border-style: dotted;
+            border-width: thin;
+            /*çizgili çizgilidir */
+        }
+        
+        .dashed {
+            border-style: dashed;
+            /*kalın çizgilidir */
+            border-width: medium;
+        }
+        
+        .solid {
+            border-style: solid;
+            /*düz bir çizgidir*/
+            border-width: thick;
+        }
+        
+        .double {
+            border-style: double;
+            /*çift çizgidir*/
+            border-width: 5px;
+        }
+        
+        .groove {
+            border-style: groove;
+            /*opacity düşük çizgi*/
+            border-width: 10px 2px 5px 3px;
+            /*4 köşenin kalınlığını bu şekilde üst kısmından başlayarak sağa doğru verebilirsin */
+        }
+        
+        .ridge {
+            border-style: ridge;
+        }
+        
+        .inset {
+            border-style: inset;
+        }
+        
+        .outset {
+            border-style: outset;
+        }
+        
+        .none {
+            border-style: none;
+        }
+        
+        .hidden {
+            border-style: hidden;
+        }
+        
+        .mix {
+            border-style: dotted dashed solid double;
+            /* saat yönüne göre şekillenen bir tasarım */
+        }
+        
+        .FG {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: none;
+            border-left-style: double;
+            /*her kenara farklı stil verebilirsin */
+        }
+        
+        .Deneme {
+            border: 5px groove brown;
+            /*tek bir css etiketiyle bunların hepsini yapabilirsin */
+        }
+        
+        .Msc {
+            border-left: 7px solid red;
+            /* tek bir yönden border verebilirsin. */
+        }
+        
+        .rds {
+            border: 6px solid blue;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Borders</h1>
+    <p class="dotted">Dotted Border</p>
+    <p class="dashed">dashed Border</p>
+    <p class="solid">solid Border</p>
+    <p class="double">double Border</p>
+    <p class="groove">groove Border</p>
+    <p class="ridge">ridge Border</p>
+    <p class="inset">inset Border</p>
+    <p class="outset">outset Border</p>
+    <p class="none">none Border</p>
+    <p class="hidden">hidden Border</p>
+    <p class="mix">mix Border</p>
+    <p class="FG">Different border styles</p>
+    <p class="Deneme">Ömer FG</p>
+    <p class="Msc">Music</p>
+    <p class="rds">radius</p>
+</body>
+
+</html>

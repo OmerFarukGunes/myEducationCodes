@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,
+        #FG {
+            font-size: x-large;
+            margin: auto;
+            background-color: aqua;
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        #FG {
+            display: none;
+            /*başlangıçta none yapıyoruz.*/
+        }
+    </style>
+</head>
+
+<body>
+    <p onclick="Show()">Paneli Göster
+    </p>
+    <div id="FG">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem vel architecto omnis laudantium odio fuga, aliquid sapiente at? Dolore, consectetur vitae. Accusantium placeat iste enim fugiat dolore odio voluptates soluta quasi veritatis odit
+        repellendus ducimus reiciendis ratione dignissimos sed inventore, commodi minima consequuntur sit doloribus eos qui eaque! Commodi minima eaque quibusdam autem illo officia voluptatem dignissimos asperiores culpa dolorem, atque iure velit. Tenetur
+        debitis totam numquam porro nobis! Doloremque possimus impedit est saepe maiores quod unde quasi aperiam labore explicabo neque perspiciatis officiis maxime voluptatibus harum vitae ad, animi, totam tenetur corrupti provident deserunt. Inventore,
+        dolorum. Sit modi totam quae, accusantium non voluptates pariatur vel laboriosam? Aliquid delectus adipisci odio doloremque? Quas enim magni esse similique ad. Doloribus mollitia nemo suscipit, consequuntur voluptatibus quisquam vitae sunt reprehenderit
+        aspernatur, eveniet iusto facere quo! Expedita, accusamus neque voluptatibus doloribus ipsa iusto officiis quam id fuga quidem accusantium non debitis dolor odit.</div>
+    <script>
+        function Show() {
+            if (document.getElementById("FG").style.display == "none") {
+                document.getElementById("FG").style.display = "block";
+            } else {
+                document.getElementById("FG").style.display = "none";
+            } /*unity oyun kodlamasından pek farkı yokmuş .d*/
+        }
+    </script>
+</body>
+
+</html>

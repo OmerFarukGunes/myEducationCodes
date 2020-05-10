@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: red;
+            /*linke tıklamadan önce*/
+        }
+        
+        a:visited {
+            /*ziyaret edilmiş olan*/
+            color: green;
+        }
+        
+        a:hover {
+            /*üzerine geldiğinde*/
+            color: pink;
+        }
+        
+        a:active {
+            color: blue;
+            /*tııklarken*/
+        }
+        
+        a.fg:hover {
+            color: brown;
+        }
+        
+        div.divB {
+            background-color: greenyellow;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        div.divB:hover {
+            background-color: lightblue;
+        }
+        
+        p.visible {
+            display: none;
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        .click {
+            border: 1px solid red;
+            background-color: aquamarine;
+        }
+        
+        .click:hover p {
+            display: block;
+        }
+        
+        P:first-child {
+            color: red;
+            /*ilk p etiketinde işlemler yapabilirsin.*/
+        }
+        
+        p i:first-child {
+            color: green;
+            /*p lerin ilk i ler*/
+        }
+        
+        q:lang(no) {
+            /*böyle bir kullanım vardır*/
+            quotes: "/" "/";
+            /*istediğin özelleştirmeyi yapabilirsin ancak bu genelde metin içerisinde farklı dilden kelimeler varsa 
+            onu belirtmek için kullanılır. şuan biz başına ve sonuna / / koyduk.*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A etiketi</h1>
+    <a href="https://www.google.com">google</a>
+    <a class="fg" href="#contact">Contact</a>
+
+    <div class="divB">click me</div>
+    <div class="click"> seviyorum seni kim olduğunu görmek için üzerine gel
+        <p class="visible">Ömer FG</p>
+    </div>
+    <p>Ömer FARUK <i>Günes</i>
+        <i>Günes</i>
+        <i>Günes</i></p>
+    <p>Ömer FARUK <i>Günes</i>
+        <i>Günes</i>
+        <i>Günes</i></p>
+    <p>Ömer FARUK<i>Günes</i>
+        <i>Günes</i>
+        <i>Günes</i></p>
+
+    <p>Omer FG <q lang="no">deneme</q> 1 2 3</p>
+</body>
+
+</html>

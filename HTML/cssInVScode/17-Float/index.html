@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img.img1 {
+            float: right;
+            /*image ı right ile sağa left ile sola alabilirsin.*/
+        }
+        
+        .div1 {
+            width: 100px;
+            height: 50px;
+            border: 2px solid red;
+            float: left;
+            margin: 10px;
+        }
+        
+        .div2 {
+            border: 1px solid blue;
+            clear: left;
+            /*bunun soluna kimsenin geçmemesini sağlar bu şekilde iç içe girmeleri engellersin. aynı şekilde right ta yapabilirsin.*/
+        }
+        
+        .div3 {
+            width: 700px;
+            border: 2px solid black;
+            float: right;
+            margin: 10px;
+            /*overflow: auto;*/
+            /*yazıyı resimle beraber sığdırmaya çalışacak olmazsa bar eklicek 
+            */
+        }
+        
+        .div3::after {
+            /*overflow auto ile bunu yapıyoruz aslında*/
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .img2 {
+            float: left;
+        }
+        
+        * {
+            box-sizing: border-box;
+            /*normalde border padding vs eklemesi yapınca alandan yer biz bunların alan hesabına katılmasını istemiyorsak
+            bu şekilde border kutusu haline getiriyoruz onları*/
+        }
+        
+        .box {
+            float: left;
+            width: 33.33%;
+            border: 1px solid red;
+            /*normalde bunu yaptığında 3 kutudan biri aşağı kayar sığmadığından ama biz bunun hesabını
+            katmamasını söyledik*/
+            padding: 50px;
+            text-align: center;
+        }
+        
+        .fg {
+            margin-bottom: 10px;
+        }
+        
+        .fg::after {
+            content: "";
+            clear: both;
+            display: table;
+            /*yeni nesil temizleme uydurma ekrana sığdırma yöntemidir.*/
+            /*bunu yapmasan yukarıda ki margin çalışmayabilirdi.*/
+        }
+        
+        ul {
+            list-style-type: none;
+            /*başlarındaki sıralama kayboldu
+            */
+            padding: 0;
+            margin: 0;
+            background-color: #777;
+            overflow: auto;
+        }
+        
+        li {
+            float: left;
+            /*hepsi yanayana geldi*/
+        }
+        
+        li a {
+            /*li nin içerisindeki a*/
+            display: inline-block;
+            /*li nin içerisindeki a ların hepsi inline block olsunki aynı işlemleri yapabilelim yani padding düzgün çalışsın*/
+            color: white;
+            padding: 14px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .banner {
+            background-color: red;
+        }
+        
+        li a:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <img src="23Nisan.jpg" width="200px" class="img1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet dignissimos magni libero nisi. Eius assumenda ipsum quia officiis inventore blanditiis. Optio quis, sit repudiandae alias eligendi
+        dolores? Corporis voluptate eius quidem, neque illo sequi pariatur, explicabo, praesentium dolorem veritatis vel adipisci quisquam dolore iure similique. Veritatis ipsum soluta dolorem vitae voluptatibus nemo, velit harum cum aut quaerat, blanditiis
+        minus repudiandae. Voluptas laudantium molestiae quasi iste? Dolorum architecto vel rerum adipisci consectetur? Officia nostrum maxime nam dolore voluptatibus officiis fuga corrupti accusantium debitis reiciendis enim tempore et sit rerum libero,
+        nesciunt veniam ad consequatur atque ducimus ab. Tempore enim sapiente dolore expedita facilis minus magnam unde labore voluptate? Doloremque ratione dolorem expedita eius facilis hic cupiditate aut ullam aliquid officia, impedit rem ipsam unde
+        nostrum at suscipit placeat nihil consectetur. Illo ut quisquam corporis excepturi accusamus consectetur quia ea saepe, placeat harum nobis pariatur incidunt nam! Rerum consequuntur sit asperiores quaerat obcaecati quidem fugiat tempore impedit
+        quasi aut similique molestiae, ab a, necessitatibus atque quos nobis. Veniam ab consequuntur voluptatum perferendis nostrum magnam commodi tempora quam. Laborum ea quibusdam possimus a accusantium repellendus? Iste, nisi? Ut veritatis non fuga,
+        voluptas consequatur voluptatibus deleniti excepturi eos aliquid et aliquam dignissimos fugiat.</p>
+    <h2>clear kullanılmadan</h2>
+    <div class="div1"> div1 </div>
+    <div class="div2">div2</div>
+    <div class="div3"><img src="egitim.png" width="100px" class="img2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, inventore, officia accusamus laudantium deleniti assumenda debitis totam aut a quod dolorum eos rem dolores sint ullam ducimus
+        dolorem, et voluptatem sed. Laborum quo voluptatum fugit ipsam rerum neque laboriosam dolorem, at explicabo, odio dignissimos illum id repellendus velit similique natus!</div>
+    <h2> <br> <br> eşit kutular</h2>
+    <div class="fg">
+        <div class="box" style="background-color: lightcyan;">
+            <p>yazı</p>
+        </div>
+        <div class="box" style="background-color: lightcyan;">
+            <p>yazı</p>
+        </div>
+        <div class="box" style="background-color: lightcyan;">
+            <p>yazı</p>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsum ad ea, sit libero, eos asperiores vitae eius nulla numquam laborum nisi veritatis est adipisci quae? Rem, itaque earum repellat fugiat repellendus, delectus natus dolorem id
+        distinctio, blanditiis nihil impedit. Hic earum id aut harum tempora ipsa ipsam laudantium illum numquam qui nemo dolores minima explicabo suscipit odit distinctio quaerat perferendis, exercitationem assumenda, praesentium voluptatibus doloribus.
+        Rerum placeat iusto mollitia suscipit, ratione maiores deleniti obcaecati soluta perferendis libero laboriosam officia numquam iste nisi similique dolorem excepturi veniam delectus. Fugiat obcaecati ducimus neque placeat quaerat nisi facilis minus
+        provident possimus expedita.</p>
+    <ul>
+        <li>
+            <a class="banner" href="home">Home</a>
+        </li>
+        <li>
+            <a href="news">news</a>
+        </li>
+        <li>
+            <a href="contact">contact</a>
+        </li>
+        <li>
+            <a href="about">about</a>
+        </li>
+    </ul>
+</body>
+
+</html>

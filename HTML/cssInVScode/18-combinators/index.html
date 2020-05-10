@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {
+            /*descanted selectordur bu divin altındaki p biryerden bir yere ulaşmak ancak bu div altındaki tüm p lere verir*/
+            background-color: yellow;
+        }
+        
+        div>p {
+            /*bu ise child selectördür direk sadece div in hemen altında olan p ler ile iş yap demektir*/
+            border: 1px red solid;
+        }
+        
+        div+p {
+            /*adjusting selektördür divin ardından gelen ilk p etiketi içindir*/
+            background-color: aquamarine;
+        }
+        
+        div~p {
+            /*div ile aynı seviyede yani aynı konumda olanlar için css verir*/
+            border: 2px solid blue
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>paragraf1</p>
+        <p>paragraf2</p>
+        <section>
+            <p>paragraf3</p>
+        </section>
+        <!--section içerisinde dahi olsa p ler css i alır.-->
+    </div>
+    <p>paragraf4</p>
+    <p>paragraf5</p>
+</body>
+
+</html>

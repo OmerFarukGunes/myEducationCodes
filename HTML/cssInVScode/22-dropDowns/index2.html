@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Drop {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        .Drop:hover .down {
+            display: block;
+        }
+        
+        .down {
+            position: absolute;
+            display: none;
+            background-color: aqua;
+            width: 85px;
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.2);
+            right: 0;
+        }
+        
+        .down a {
+            display: block;
+            padding: 5px;
+            color: white;
+            margin: 3px;
+            text-decoration: none;
+        }
+        
+        .down a:hover {
+            background-color: violet;
+        }
+        
+        .button {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+        }
+        
+        .fg {
+            padding: 20px;
+            font-size: 20px;
+            width: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Drop" style="float: right;">
+        <img src="23Nisan.jpg" alt="" style="width: 50px;" height="50px">
+        <div class="down">
+            <img src="23Nisan.jpg" alt="" width="200px" style="float: right;">
+
+            <div class="fg">
+                cenga 23 nisan afişi
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

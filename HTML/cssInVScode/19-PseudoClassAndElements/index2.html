@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked {
+            /*inputun check durumunda*/
+            height: 50px;
+            width: 50px;
+        }
+        
+        input[type=text]:enabled {
+            background: honeydew;
+        }
+        
+        input[type=text]:disabled {
+            background: red;
+        }
+        /*aktif ve aktif olmayan değerler için özelleştirme yapabilirsin*/
+        
+        p:empty {
+            /*boş olan p etiketi için bir css uygulanabilir*/
+            width: 150px;
+            height: 50px;
+            background: blue;
+        }
+        
+        p:first-of-type {
+            background: blue;
+            /*ilk p tipine css uygulayabilirsin bu p etiketi yukaradaki ile aynıdır.*/
+        }
+        
+        input:in-range {
+            /*eğer değerimiz min ve max içerisinde ise bu özelleştirmeler yapılır*/
+            border: 2px solid red;
+        }
+        
+        input:invalid {
+            /*eğer geçersiz olursa*/
+            background-color: darkblue;
+        }
+        
+        p:last-child {
+            /*ilk çocuk gibi son çocuğa da verebilirsin ama bizim kodda çocuk olmadığından gözükmüyor*/
+            background: lightcoral;
+        }
+        
+        p:last-of-type {
+            /*son p tipi için özelleştirme yaparsın*/
+            background-color: lightskyblue;
+        }
+        
+         :not(p) {
+            /*p olmayanlar için renk ver body div form hepsi!*/
+            background-color: lightyellow;
+        }
+        
+        p:nth-last-of-type(2) {
+            /*sondan ikinci p tipini özelleştir son olmaması için lastı sil. aynı şekilde bir parentın çocuklarına da bunu yapmak için
+        nth-child kullanmalısın..*/
+            background-color: red;
+        }
+        
+        p:only-of-type {
+            /*tek çocuk içindir child içinde geçerlidir.*/
+            background-color: rebeccapurple;
+        }
+        /*child body dışında parentlerı seçer type ise tüm parentlerın body dahil tüm child lerını*/
+        
+        input:optional {
+            /*optional olanlar için özelleştirme*/
+            background-color: yellow;
+        }
+        
+        input.Req:required {
+            /*class olmasa da olurdu ancak buradaki css yukarıdaki ile çakıştığından böyl yaptık. Normalde amacı
+        zorunlu girdiler için css vermek*/
+            background-color: hotpink;
+        }
+        
+        input:out-of-range {
+            /*girdinin misal belli bir sayı aralığında olması gereken girdinin değeri fazla olursa bu olur*/
+            background-color: red;
+        }
+        
+        input:read-only {
+            /*sadece read only için yapabilirsin*/
+            border: 2px solid black;
+        }
+        
+        input:read-write {
+            /*hem okuma hem yazmalar için css*/
+            border: 3px solid brown;
+        }
+        
+         :root {
+            /*tüm htmle geçerli olanlar için css verir. geçerli olmak için başka background verilmemiş olması gerek.*/
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="radio" checked="checked" value="Erkek" name="Cinsiyet">
+        <!--default olarak seçilidir-->
+        <input type="radio" value="Kadın" name="Cinsiyet">
+        <!--radiolar birini seçersen diğeri iptal olur misal biri kadınsa erkek olamaz aynı name üzerinde bunu düzeleyebilirsin
+        -->
+        <input type="checkbox" value="Bisiklet">
+        <input type="checkbox" value="Araba"> AD/SOYAD: <input type="text" checked="checked" value="ömer"><br> Mah: <input type="text" value="fg"><br> SK: <input type="text" value="mardin"><br> İlçe: <input type="text" disabled="disabled" value="yenişehir">
+    </form>
+    <div>FG</div>
+    <p></p>
+    <p>Ömer</p>
+    <p>Ömer FG</p>
+
+    <input type="number" min="5" max="15" value="9">
+    <input type="email" value="bayomerfg@gmail.com">
+    <!--bunu geçersiz yap ve css i gör .d-->
+    <div>
+        <p>
+            Ömer
+        </p>
+    </div>
+    <div>
+        <p>
+            Faruk
+        </p>
+        <p>Güneş
+        </p>
+    </div>
+    AD <input type="text"><br> Soyad <input class="Req" type="text" required>
+    <!--zorunda-->
+    <input type="text" readonly value="omer">
+    <!--sadece okuma işlemi yapabilirsin.-->
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: auto;
+            /*taşmayı engellersin böylece.*/
+            width: 70%;
+            /*sayfanın %50 sini kullan.*/
+            background-color: burlywood;
+        }
+        
+        #parent {
+            height: 600px;
+            width: 250px;
+            background-color: green;
+            border: 3px solid black;
+        }
+        
+        #Child {
+            height: 50%;
+            width: 30%;
+            border: 2px solid red;
+        }
+        
+        .FG {
+            max-height: 50px;
+            /*max yükseklik koyduk*/
+            overflow: auto;
+            /*taşmayı engeller scroll bar koyarsın*/
+        }
+        
+        .Sir {
+            max-width: 100px;
+            overflow: auto;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="Child">
+            Css is so usefull
+        </div>
+        <h2>
+            Css Education
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis totam tempora asperiores molestiae mollitia magni.</p>
+    </div>
+    <!-- burada iç içe değerlerin cssleri birbirini nasıl etkilediğini görebilirsin-->
+    <h1>max height and width</h1>
+    <p class="FG">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui velit, posuere a euismod ac, feugiat eu nisl. Donec et commodo velit, ut tempus ante. Maecenas vestibulum velit eget fermentum tempus. Pellentesque imperdiet fringilla pellentesque.
+        Mauris nisi tellus, molestie in bibendum a, sagittis eget ex. Nam ullamcorper ligula in suscipit vehicula. Nulla ornare nulla dapibus, vestibulum quam et, aliquet lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Etiam eget lorem sagittis, pharetra tortor vitae, sagittis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut bibendum, arcu vel fringilla cursus, libero dolor cursus nisl, ac imperdiet
+        dui odio id neque. Duis vel orci eleifend, aliquam nunc eu, commodo dui. Curabitur eu iaculis turpis. Phasellus viverra, enim nec volutpat tempor, nulla augue interdum lorem, a tincidunt ligula urna nec magna. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quidem tenetur expedita autem consequuntur accusantium veritatis, consequatur iste aliquid vitae voluptatum beatae in, facilis aut molestias repudiandae, quam mollitia. Beatae, explicabo.</p>
+    <p class="Sir">Phasellus maximus metus eu maximus sagittis. Maecenas augue erat, rutrum eu quam eu, vestibulum varius augue. Aliquam sagittis sapien eget massa ultrices, a dictum magna gravida. Sed dui libero, dapibus ut gravida a, congue nec urna. Sed feugiat tincidunt
+        nulla, vitae tincidunt justo dignissim faucibus. Praesent urna dui, sagittis et mi sed, facilisis tristique est. Praesent fringilla sem sit amet magna elementum pulvinar. Curabitur at arcu id ligula finibus aliquet. Suspendisse accumsan justo
+        nulla, quis placerat nulla egestas in. Cras id rhoncus justo.</p>
+</body>
+
+</html>

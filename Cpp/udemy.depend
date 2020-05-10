@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1577629488 source:d:\cpp\udemy\main.cpp
+	<iostream>
+	<stdio.h>
+	<bits/stdc++.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	"Hayvan.h"
+	<string>
+	<exception>
+	<vector>
+	<list>
+
+1569581529 source:d:\cpp\udemy\10-20.cpp
+	<iostream>
+	<stdio.h>
+
+1570031552 d:\cpp\udemy\hayvan.h
+	<iostream>
+
+1570031570 source:d:\cpp\udemy\hayvan.cpp
+	"Hayvan.h"
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imageBox {
+            float: left;
+            border: 1px solid red;
+            margin: 4px;
+            padding: 6px;
+            width: 400px;
+        }
+        
+        button {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imageBox" id="imageBox1">Resim 1 <br>
+        <img src="23Nisan.jpg" width="100%">
+        <button onclick="removeelement()">
+            Kaldır
+        </button>
+    </div>
+    <div class="imageBox" id="imageBox2">Resim 2 <br>
+        <img src="egitim.png" width="100%">
+        <button onclick="changeVisibility()">
+            Gizle
+        </button>
+    </div>
+    <div class="imageBox" id="imageBox3">Resim 3 <br>
+        <img src="PROJE_YARISMASI.jpeg" width="100%">
+        <button onclick="reset()">
+            Resetle
+        </button>
+    </div>
+    <script>
+        /*bu java scriptir*/
+        function removeelement() {
+            document.getElementById("imageBox1").style.display = "none";
+            /*oyun kodlamayla aynı önce dökümana yani objeye ulaş sonra ne yapmak istiyorsan
+                       onun üst segmentine yani style ına git oradan display i none yap.*/
+        }
+
+        function changeVisibility() {
+            document.getElementById("imageBox2").style.visibility = "hidden";
+        }
+
+        function reset() {
+            document.getElementById("imageBox1").style.display = "block";
+            document.getElementById("imageBox2").style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>

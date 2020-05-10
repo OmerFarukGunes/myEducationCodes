@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 10px 0px;
+            box-sizing: border-box;
+            border: 1px solid red;
+            border-radius: 10px;
+            background-color: seashell;
+        }
+        
+        input[type=text]:focus {
+            background-color: snow;
+        }
+        
+        input[type=text]:hover {
+            background-color: azure;
+        }
+        
+        div {
+            padding: 20px;
+            background-color: lavender;
+            border-radius: 15px;
+        }
+        
+        input[type=submit] {
+            padding: 15px 20px;
+            width: 100%;
+            background-color: lightgrey;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="/Home/FillForm">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" placeholder="Your Name">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" placeholder="Your Last Name">
+
+            <label for="country">country</label>
+            <select name="country" id="">
+                <option value="TR">Türkiye</option>
+                <option value="EN">England</option>
+                <option value="FR">Français</option>
+                   
+     </select>
+            <input type="submit" value="save" id="">
+        </form>
+    </div>
+    <td>deneme</td>
+</body>
+
+</html>

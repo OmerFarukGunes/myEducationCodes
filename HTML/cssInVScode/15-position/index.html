@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*position:fixed; sayfa da sabit kalmasını sağlar.*/
+        
+        div.relative {
+            position: relative;
+            /*eğer chil absolute parent relative ise childona göre konumlanır*/
+            border: 2px solid red;
+            bottom: 0px;
+            right: 0px;
+            width: 500px;
+            height: 200px;
+        }
+        
+        div.absolute {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            border: 3px solid darkblue;
+            top: 80px;
+            right: 0px;
+        }
+        
+        div.fix {
+            position: fixed;
+            border: 2px solid purple;
+            bottom: 0px;
+            right: 0px;
+            /*her zaman belli ettiğin değerlerde bottom right gibi kısımlarda durur.*/
+        }
+        
+        div.Stick {
+            position: -webkit-sticky;
+            position: sticky;
+            border: 1px solid aqua;
+            background-color: lightcyan;
+            padding: 5px;
+            margin: 5px;
+            top: 0px;
+            /*eğer yukarı kısımda belli bir pxden sonra sabit durmasını istiyorsan aşağı kaydırırken veya sola sağa sticky kullanırsın*/
+            z-index: 1;
+        }
+        
+        img.Alt {
+            position: absolute;
+            /*normal sayfaya göre konumlandıra yapar.*/
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            /*photoshoptaki gibi bunları katman gibi görük katman görünürlüğünü sıralayabilirsin. bu şekilde arkaplana atabilirsin.*/
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .FG {
+            position: absolute;
+            bottom: 50%;
+            text-align: center;
+            width: 100%;
+        }
+        
+        img {
+            opacity: 0.3;
+            width: 100%;
+            /*0 ile 1 arasında opaklık verebilirsin*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">Relative
+        <div class="absolute">absolute
+
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium enim quod est ipsa?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime debitis esse, ipsam obcaecati quos porro!</p>
+    <div class="Stick">
+        Ben stickyim
+    </div>
+    <div style="padding-bottom: 1000px;">
+        <!-- aşağı doğru bir scroll bar çıksın diye öyle yaptık.-->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quam iusto quibusdam nostrum expedita necessitatibus quod fugit? Et autem suscipit earum illum veritatis iusto amet aspernatur optio cum, inventore provident vero, qui nam accusantium sed
+        ab voluptates natus quibusdam excepturi. Facilis, earum a quisquam praesentium est nobis ipsam expedita quis?
+    </div>
+    <div class="fix">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci aut, deleniti earum fugit voluptatem explicabo corporis dignissimos ipsa delectus necessitatibus debitis eos quisquam cumque nam deserunt iusto voluptatum optio suscipit?</div>
+    <h1>
+        Ömer FG
+    </h1>
+    <img src="23Nisan.jpg" style="width: 100px;" class="Alt">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam ipsam officia autem! Reprehenderit aspernatur voluptatem aperiam vel, amet ratione?</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="container">
+        <img src="23Nisan.jpg" width="5000px" height="300px">
+        <div class="FG">
+            ORTADAN YAZI
+        </div>
+    </div>
+</body>
+
+</html>

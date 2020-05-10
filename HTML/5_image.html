@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+   <img src="237-600x300.jpg" width="150" height="150">
+   <img src="238-600x300.jpg" width="150" height="150">
+   <img src="240-600x300.jpg" width="150" height="150">
+   
+   <div style ="padding-top: 50px; background-image: url('logo.png');"> <!-- 50 piksel aşağıya al diyor. arkaplan resmini logo . png yap dedik-->
+   	<p style ="padding: 100px">
+   		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   	</p>
+   </div> <!-- belli bir alan kapsamaya yarar-->
+   
+   <picture>
+   	<source media="(min-width: 650px)" srcset="logo.png"> <!-- 650 den büyük değerlerde bu geçerli olacak -->
+   	<source media="(min-width: 465px)" srcset="238-600x300.jpg">	<!--465 ve 650 arası değerlerde bu geçerli olacak -->
+   		<img src="238-600x300.jpg"><!-- kalanda değerlerde bu geçerli olacak -->
+   </picture>
+
+</body>
+</html>

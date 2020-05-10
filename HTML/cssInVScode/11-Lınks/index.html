@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link
+        /*,a:visited yapabilirsin ve aynı özelliklere sahip olabilir.*/
+        
+        {
+            /*tıklamadan önceki rengidir pembe*/
+            /*default hali yani ilk olarak bu halleri tanımlaman lazımki diğerlerinde de aktif olsun */
+            color: pink;
+            background-color: coral;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+        }
+        
+        a:visited {
+            /*eğer tıklandıysa*/
+            color: green;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            /*üzerine gelince olan renk*/
+            color: aquamarine;
+            text-decoration: line-through;
+            /*üzerine geldiğinde üstünü çiz*/
+        }
+        
+        a:active {
+            /*tam tıklarkenki renk*/
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p><a href="https://mail.google.com">Maile git</a></p>
+</body>
+
+</html>

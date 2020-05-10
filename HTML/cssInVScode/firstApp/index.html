@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        ul.topMenu {
+            list-style-type: none;
+            /*başlarındaki sıralama kayboldu
+            */
+            padding: 0;
+            margin: 0;
+            background-color: #777777;
+            overflow: auto;
+        }
+        
+        .topMenu li {
+            float: left;
+            /*hepsi yanayana geldi*/
+        }
+        
+        .topMenu li a {
+            /*li nin içerisindeki a*/
+            display: inline-block;
+            /*li nin içerisindeki a ların hepsi inline block olsunki aynı işlemleri yapabilelim yani padding düzgün çalışsın*/
+            color: white;
+            padding: 14px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .fg {
+            background-color: red;
+        }
+        
+        .topMenu li a:hover {
+            background-color: aqua;
+        }
+        
+        .clearfix {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .sidemenu li a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 4px;
+            text-decoration: none;
+            background-color: #eee;
+            margin-bottom: 4px;
+            padding: 8px;
+            color: #555555;
+        }
+        
+        .sidemenu li a:hover {
+            background-color: #555555;
+            color: white;
+        }
+        
+        .sidemenu {
+            width: 150px;
+        }
+        
+        .sidemenu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .content {
+            max-width: 67.896%;
+        }
+        
+        .column {
+            float: left;
+            padding: 10px;
+        }
+        
+        .header {
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        p.info {
+            overflow: auto;
+            height: 140px;
+        }
+        
+        .footer {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="topMenu">
+        <li>
+            <a class="fg" href="home">Home</a>
+        </li>
+        <li>
+            <a href="news">news</a>
+        </li>
+        <li>
+            <a href="contact">contact</a>
+        </li>
+        <li>
+            <a href="about">about</a>
+        </li>
+    </ul>
+    <div class="clearfix ">
+        <div class="column sidemenu">
+            <ul>
+                <li><a href="#Flight">The Flight</a></li>
+                <li><a href="#City">The City</a></li>
+                <li><a href="#Food">The Food</a></li>
+                <li><a href="#Island">The Island</a></li>
+                <li><a href="#People">The People</a></li>
+                <li><a href="#Oceans">The Oceans</a></li>
+                <li><a href="#History">The History</a></li>
+            </ul>
+        </div>
+        <div class="column content">
+            <div class="header">
+                <h1>The City</h1>
+            </div>
+            <h1>China</h1>
+            <p class="info"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus illum tempora sit doloremque. Distinctio aspernatur deleniti, impedit culpa iure quidem in molestias laboriosam, voluptatum dolorum eos repudiandae dignissimos modi facere
+                consequatur minima, ipsam sit ullam ab cupiditate? Sed quos cupiditate atque optio consequuntur esse obcaecati adipisci! Veritatis quibusdam reprehenderit quaerat, omnis laborum nulla dolor labore commodi consectetur rem excepturi tempore
+                accusamus ipsa perspiciatis quos. Ad consequatur rerum veritatis error laudantium saepe eveniet illo! Vel aliquam tempora quis? Neque quibusdam saepe voluptates quo illum, tempore magnam omnis. Minima maxime, magnam excepturi repellat
+                adipisci tenetur expedita repellendus error nihil quas dolor perspiciatis similique ex cum provident qui, nisi, et quae consequuntur deleniti quam voluptas culpa. Adipisci inventore quis distinctio vel cumque quasi accusantium odio libero
+                repellendus est. A incidunt quibusdam quidem corrupti omnis tenetur vero doloremque nesciunt explicabo, ut quod quae id repellendus facilis eius laboriosam amet non magni quasi placeat exercitationem culpa numquam alias? Nostrum dignissimos,
+                vero omnis explicabo quasi molestias laborum. Placeat dolorum doloremque facere molestias eligendi eius nobis. Architecto repudiandae quis similique repellendus placeat ab, sint nihil deserunt in dolorum accusamus aut ullam tempore a at
+                sit dolor esse nobis officia veritatis consectetur quibusdam fuga! Cupiditate aliquam rem dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure dolorem ipsam. Molestias, eius deleniti! Tempore eligendi repellendus
+                officia ratione assumenda deleniti, quisquam in mollitia, libero quis facilis soluta dolore accusamus eaque vero accusantium voluptatibus. Numquam illo perspiciatis deleniti laborum architecto magni mollitia, nisi quis iusto, obcaecati
+                expedita facere deserunt?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer Text</p>
+    </div>
+</body>
+
+</html>
