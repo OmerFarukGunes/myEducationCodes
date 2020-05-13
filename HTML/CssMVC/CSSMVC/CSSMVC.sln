@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSSMVC", "CSSMVC.csproj", "{75848164-50FA-4738-A329-CD43151B68C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75848164-50FA-4738-A329-CD43151B68C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75848164-50FA-4738-A329-CD43151B68C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75848164-50FA-4738-A329-CD43151B68C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75848164-50FA-4738-A329-CD43151B68C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {360C7E12-7081-4167-8E38-B8C69B8838B6}
+	EndGlobalSection
+EndGlobal

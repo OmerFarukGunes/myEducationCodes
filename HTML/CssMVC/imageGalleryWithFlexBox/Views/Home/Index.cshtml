@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 5px;
+        }
+
+        .colomn {
+            flex: 25%; /*sen bu arkadaşın %25 ini tut ve ve içerisinde resimler olsun*/
+            max-width: 25%;
+            padding: 0px 5px;
+        }
+
+            .colomn img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%; /*resimlerin bulunduğu yeri kaplamasını sağlamak için.*/
+            }
+
+        @@media screen and (max-width: 800px) { /*mobiller için gereken responsivelik yapıldı*/
+            .colomn {
+                flex:50%;
+                max-width:100%;
+            }
+        }
+        @@media screen and (max-width: 600px) { /*mobiller için gereken responsivelik yapıldı*/
+            .colomn {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Image Gallery</h1>
+        <p>Power Of FlexBox</p>
+    </div>
+    <div class="row">
+        <div class="colomn">
+
+            <img src="~/img/resimler/1.jpg" />
+            <img src="~/img/resimler/13.jpg" />
+            <img src="~/img/resimler/8.jpg" />
+            <img src="~/img/resimler/4.jpg" />
+            <img src="~/img/resimler/6.jpg" />
+            <img src="~/img/resimler/5.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/img/resimler/10.jpg" />
+            <img src="~/img/resimler/14.jpg" />
+            <img src="~/img/resimler/5.jpg" />
+            <img src="~/img/resimler/9.jpg" />
+            <img src="~/img/resimler/7.jpg" />
+            <img src="~/img/resimler/4.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/img/resimler/11.jpg" />
+            <img src="~/img/resimler/15.jpg" />
+            <img src="~/img/resimler/6.jpg" />
+            <img src="~/img/resimler/8.jpg" />
+            <img src="~/img/resimler/3.jpg" />
+            <img src="~/img/resimler/14.jpg" />
+        </div>
+        <div class="colomn">
+            <img src="~/img/resimler/12.jpg" />
+            <img src="~/img/resimler/3.jpg" />
+            <img src="~/img/resimler/7.jpg" />
+            <img src="~/img/resimler/9.jpg" />
+            <img src="~/img/resimler/2.jpg" />
+            <img src="~/img/resimler/13.jpg" />
+        </div>
+    </div>
+</body>
+</html>

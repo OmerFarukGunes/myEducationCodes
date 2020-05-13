@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .header {
+            padding: 25px;
+            background: white;
+            text-align: center;
+        }
+        
+        body {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .nav {
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        .nav a {
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav a:hover {
+            background-color: grey;
+        }
+        
+        .sol {
+            float: left;
+            width: 75%;
+        }
+        
+        .sag {
+            float: left;
+            width: 25%;
+            padding-left: 15px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .fakeimg {
+            background-color: #aaa;
+            padding: 20px;
+            width: 100%;
+        }
+        
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .sol,
+            .sag {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, beatae?</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+    <div class="row">
+        <div class="sol">
+            <div class="card">
+                <h2>TITTLE</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint.</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dignissimos omnis aut neque, officia animi. Illum optio magni beatae sint?</p>
+            </div>
+            <div class="card">
+                <h2>TITTLE</h2>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint.</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dignissimos omnis aut neque, officia animi. Illum optio magni beatae sint?</p>
+            </div>
+
+        </div>
+        <div class="sag">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, perspiciatis!</p>
+            </div>
+            <div class="card">
+                <h3>Populer Post</h3>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, perspiciatis!</p>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>

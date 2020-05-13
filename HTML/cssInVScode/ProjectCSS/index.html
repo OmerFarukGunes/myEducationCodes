@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .nav {
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        .nav a {
+            padding: 15px 17px;
+            float: left;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav a:hover {
+            background-color: grey;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            padding: 15px;
+        }
+        
+        .column.side {
+            width: 25%;
+        }
+        
+        .column.midle {
+            width: 50%;
+        }
+        
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            background-color: lavender;
+            text-align: center;
+            padding: 5px;
+            font-size: 24px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column.side {
+                width: 100%;
+            }
+            .column.midle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, consequatur!</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h1>
+                Side
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam soluta autem laudantium et nulla? Explicabo atque in suscipit, ipsam ad nihil voluptate cumque ullam.
+            </p>
+        </div>
+        <div class="column midle">
+            <h1>
+                Main Content
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur inventore minus veniam perspiciatis fuga repellat, eos, tempore repellendus voluptas a quasi repudiandae similique laudantium corrupti nemo mollitia, placeat vitae corporis
+                veritatis sint! Alias ea explicabo odio doloribus perspiciatis veritatis perferendis. Eveniet repellendus distinctio ipsum perferendis voluptates optio cupiditate, quidem vitae, eius maxime placeat quia dolor. Facilis suscipit saepe maiores,
+                nobis nemo dolores doloremque, quos nostrum error vel reprehenderit eius. Sunt iure dolor, blanditiis vero consequuntur aut molestias, voluptatibus quas animi voluptatem voluptas ipsa magnam, quos laboriosam. Esse eligendi repudiandae,
+                suscipit debitis, ducimus incidunt a nobis eaque obcaecati, quae exercitationem ab?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptates, molestiae magnam minima non maxime deleniti animi explicabo dignissimos minus veniam eligendi voluptas accusamus eos nam recusandae veritatis fugiat quae officiis
+                earum sint odio! Rem similique nesciunt animi aut eius id quibusdam molestiae, perferendis commodi, repellat corporis. Sapiente, accusamus nostrum.</p>
+        </div>
+        <div class="column side">
+            <h1>
+                Side
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam soluta autem laudantium et nulla? Explicabo atque in suscipit, ipsam ad nihil voluptate cumque ullam.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>footer</p>
+    </div>
+</body>
+
+</html>

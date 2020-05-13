@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Tittle = "Home Page";
+}
+<html>
+<head>
+    <style>
+        .FG {
+            display: flex; /*flex container*/
+            flex-direction: row-reverse; /*column alt alta koyar row yan yana koyar vs vs. buna flex direction denir. istediğin gibi dizilim yapmanı sağlar.*/
+            background-color: blue;
+            flex-wrap: wrap; /*eğer olurda verdiğin şekil değerleri düzgün bir şekilde olmazsa flex görüntüde. bunu
+                verdiğin değerleri birbirine bağlayarak düzeltmeni istediğin değerlerde (height 100 width 100) görüntü
+                elde etmeni sağlar
+            */
+            flex-flow: row-reverse wrap; /*flex direction ve flex wrap olayının beraber kullanı mıdır*/
+            justify-content: center; /*içeriği hizalamanı sağlar flex-start flex başlangıcına flex end flexin bitişine space-around
+                eşit boşluklu yapı genelin içerisine oluşturur  space between birbiri arasına eşit boşluk sağlar vs vs */
+            height: 700px;
+            align-items: center; /*yüksekliğimiz 700px. içerisindeki div yapılarının vs dikey olarak hizalamk için
+                 bunu kullanabiliriz */
+            align-content: center /*eğer alan çok büyükse align-items alan içerisindeki itemlere göre ortalama yapar(yatay şekilde). ama align content itemler arası da eşitleme de yapar (dikey olarak).*/
+        }
+
+            .FG > div { /*fg nin altında ki div etiketi demek*/
+                padding: 20px;
+                background-color: dimgrey;
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 60px; /*satır yüksekliğini ayarlamanı sağlar*/
+                font-size: 30px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="FG">
+        <div style="order: 3; flex-grow: 1">
+            1
+        </div>
+        <div style="order: 4; flex-grow: 2 ">
+            <!--alt satırda olduğundan üsttekilerden çok daha büyük gözüktü. kendi satırına göre katlama yapar. -->
+            2
+        </div>
+        <div style="order: 2; flex-grow: 1">
+            3
+        </div>
+        <div style=" order: 1; flex-grow: 4">
+            <!--flex grow diğerlerine göre büyüme yapmaktır-->
+            <!--order ile içerikleri sıralayabilirsin default 0 dır. ve en altta kalandır.-->
+            4
+        </div>
+        <div style="flex-shrink:0">
+            <!--eğer olurda küçültme uygulanıyorsa o küçültmeden etkilenme katsayıdır flex shrink. şuan
+                ki css te küçültme olmadığından etkiyi göremeyeceğiz  -->
+            5
+        </div>
+        <div style="flex-basis:400px">
+            <!--bu şekilde genişliği özel olarak ayarlayabilirsin.-->
+            6
+        </div>
+        <div style="flex:0 0 100px">
+            <!--grow shrink ve basis bunları bu sırayla tek seferde verebiliriz -->
+            7
+        </div>
+        <div>
+            8
+        </div>
+        <div>
+            9
+        </div>
+        <div style="align-self:flex-end">
+            <!-- item bazlı hizalama yapmanı sağlar.-->
+            10
+        </div>
+
+
+    </div>
+</body>
+
+</html>

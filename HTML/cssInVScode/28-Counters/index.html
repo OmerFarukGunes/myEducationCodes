@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: section;
+            counter-reset: x;
+            /*sectionları resetledik*/
+        }
+        
+        h1 {
+            counter-reset: y;
+        }
+        
+        h1::before {
+            counter-increment: x;
+            content: "Section " counter(x) ". ";
+        }
+        
+        h3::before {
+            counter-increment: y;
+            content: counter(x) "." counter(y) " ";
+            /*1.1 1.1 bu şekilde yazdık*/
+        }
+        
+        h2::before {
+            counter-increment: section;
+            /*sectiona göre artmasını istiyoruz*/
+            content: "Section " counter(section) ": ";
+            /*ve sectionu tanımladık*/
+        }
+        /*bunun sonucunda h2 den önce ne isim verdiysek (section x te olabilir) o şekilde arttırma yaparak yazmasını sağladık */
+    </style>
+</head>
+
+<body>
+    <h1>HTML EDUCATION</h1>
+    <h3> HTML</h3>
+    <h3> Css</h3>
+    <h1>Script Education</h1>
+    <h3> Js</h3>
+    <h3> VBScript</h3>
+    <h1>Ömer</h1>
+    <h2>Ömer</h2>
+    <h2>Ömer Faruk</h2>
+    <h2>Ömer FG</h2>
+</body>
+
+</html>
