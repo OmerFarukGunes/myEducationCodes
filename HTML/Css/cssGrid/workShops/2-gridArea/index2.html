@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-item1 {
+            grid-area: header;
+        }
+        
+        .grid-item2 {
+            grid-area: menuu;
+        }
+        
+        .grid-item3 {
+            grid-area: main;
+        }
+        
+        .grid-item4 {
+            grid-area: rightt;
+        }
+        
+        .grid-item5 {
+            grid-area: footer;
+        }
+        
+        .grid-cotainer {
+            display: grid;
+            background-color: deepskyblue;
+            grid-template-areas: 'header header header header header' 'menuu main main rightt rightt' 'menuu footer footer footer footer';
+            /*grid area aslında tam olarak böyle kodlanılır. her bir tanımlama bir kutucuğu işaretler. her bir tırnak ise bir sütunu belirler.*/
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        
+        .grid-cotainer>div {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-cotainer">
+        <div class="grid-item1">Header</div>
+        <div class="grid-item2">Menu</div>
+        <div class="grid-item3">Main</div>
+        <div class="grid-item4">Right</div>
+        <div class="grid-item5">Footer</div>
+    </div>
+</body>
+
+</html>

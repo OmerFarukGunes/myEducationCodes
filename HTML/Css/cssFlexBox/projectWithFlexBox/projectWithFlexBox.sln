@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectWithFlexBox", "projectWithFlexBox.csproj", "{4C8B3D75-BC97-416C-B890-5DD047DC90A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C8B3D75-BC97-416C-B890-5DD047DC90A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8B3D75-BC97-416C-B890-5DD047DC90A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8B3D75-BC97-416C-B890-5DD047DC90A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8B3D75-BC97-416C-B890-5DD047DC90A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72AA3730-9FB0-4361-BD3D-6E51D3C4A6D1}
+	EndGlobalSection
+EndGlobal
