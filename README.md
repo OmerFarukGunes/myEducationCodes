@@ -6,8 +6,7 @@ For Unreal Engine:
 1-Download all files
 2-Open epic games
 3-search project in your documentry
-4-Select downloaded files
-5-Clik yes all warnings
+5-Click yes all warnings
 5-Done!
 For unity:
 1-Download asset files
