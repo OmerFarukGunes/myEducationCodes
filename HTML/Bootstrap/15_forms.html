@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<form action="">
+			<div class="form-group">
+				<label for="">E-mail</label>
+				<input type="email" class="form-control" placeholder="****@gmail.com">
+			</div>
+			<div class="form-group">
+				<label for="">Password</label>
+				<input type="password" class="form-control" placeholder="Enter password" required="required">
+				<!-- required sayesinde zorunlu doldurulmasi gereken alanlar doldurulmazsa uyari vermesini saglayabilirsin -->
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label" for="">
+					<input class="form-check-input" type="checkbox">Remember me
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="">Comments: </label>
+				<textarea class="form-control" 	 name="" id="" cols="30" rows="10"></textarea>
+			</div>
+			<button type="submit" class="btn btn-secondary">Submit</button>
+		</form>
+	</div>
+	<div class="container">
+		<h2>Form Example</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloribus unde officia, modi explicabo sed odit totam voluptatum necessitatibus facilis.</p>
+		<form >
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" id="radio" name="optradio" value="Option1" checked>Option 1
+					<!-- tiklenebilir opsiyonlar sunarsin kullaniciya radio typelari ile -->
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label" for="radio2">
+					<input type="radio" class="form-check-input" id="radio2" name="optradio" value="Option2">Option2
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label" for="radio2">
+					<input type="radio" class="form-check-input" disabled>Option2
+					<!-- disabled secilemez-->
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	<div class="container">
+		<div class="form-check-inline">
+			<!-- yan yana dizilmesini saglarsin form-check inline ile -->
+			<label class="form-check-label">
+				<input type="radio" class="form-check-input" id="radio" name="optradio" value="Option1" checked>Option 1
+			</label>
+		</div>
+		<div class="form-check-inline">
+			<label class="form-check-label" for="radio2">
+				<input type="radio" class="form-check-input" id="radio2" name="optradio" value="Option2">Option2
+			</label>
+		</div>
+		<div class="form-check-inline">
+			<label class="form-check-label" for="radio2">
+				<input type="radio" class="form-check-input" disabled>Option2
+			</label>
+		</div>
+	</div>	
+</div>
+<div class="container">
+	<h2>Form</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, in.</p>
+	<form action="">
+		<div class="form-group">
+			<label for="sel1">Select List (select one):</label>
+			<select class="form-control" name="sellist1" id="sel1">
+				<!-- form control ile %100 width olmasin i vs saglar yani gorunumu saglayan olay odur. -->
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<br>
+			<label for="sel2">Muiltiple select list:</label>
+			<select multiple class="form-control" name="sellist2" id="sel2">
+				<!-- multiple ile coklu secim yapabilirsin -->
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control-plaintext" placeholder="Form control with playin text" name="text2">
+		</div>
+		<!-- icerisine tikladigin zaman border vs gorunumu saglar plain text -->
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+<div class="container">
+	<form >
+		<div class="form-group">
+			<input type="range" class="form-control-range" name="range">
+			<!-- mesafe bari ekler -->
+		</div>
+			<div class="form-group">
+			<input type="file" class="form-control-file border" name="range">
+			<!-- sisteme dosya yukleme veya pc den dosya secme gibi islemleri yapman icin gerekli form dokumani dir form control file. -->
+		</div>
+            
+		<button type="submit" class="btn btn-primary">Submit</button> 
+	</form>
+</div>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
