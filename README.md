@@ -1,7 +1,7 @@
 
 This properties will be updated. 
 Every title contain education codes, different workshops and simple projects.
-almost all codes include explanation.
+almost all codes include Turkish explanation.
 For Unreal Engine:
 1-Download all files
 2-Open epic games
