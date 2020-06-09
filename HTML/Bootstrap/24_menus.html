@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<!-- ul ve li yapisi ile menu boyle yapilir -->
+		<ul class="nav"> 
+			<!-- once navigasyon bari olusturuluyor -->
+			<li class="nav-item"><a href="#" class="nav-link">Home Page</a></li>
+			<!-- barin her bir itemini belirtiyor  ve her itemin linkini ayarliyoruz -->
+			<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Documents</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+		</ul>
+		<br>
+		<br>
+		<nav class="nav">
+			<!-- nav tagleri ile cok daha basit yontem kullanilarak aynisi yapilabilir -->
+			<a href="#" class="nav-link">Home Page</a>
+			<a href="#" class="nav-link">About</a>
+			<a href="#" class="nav-link">Documents</a>
+			<a href="#" class="nav-link">Categories</a>
+		</nav>
+		<br>
+		<br>
+		<nav class="nav justify-content-center">
+			<!-- justify conten ile hizalama yapilabilir. center disinda start ve end degerleri de vardir -->
+			<a href="#" class="nav-link">Home Page</a>
+			<a href="#" class="nav-link">About</a>
+			<a href="#" class="nav-link">Documents</a>
+		</nav>
+		<br>
+		<br>
+		<nav class="nav flex-column">
+			<!-- flex-column ile dikey menu yapilabilir -->
+			<a href="#" class="nav-link">Home Page</a>
+			<a href="#" class="nav-link">About</a>
+			<a href="#" class="nav-link">Documents</a>
+			<a href="#" class="nav-link">Categories</a>
+		</nav>
+		<br>
+		<br>
+		<nav class="nav nav-tabs">
+			<!-- uzerine gelindigi zaman css ozellikleri atanmis oluyor. -->
+			<a href="#" class="nav-link active">Home Page</a>
+			<!-- aktif sayfa -->
+			<a href="#" class="nav-link">About</a>
+			<a href="#" class="nav-link">Documents</a>
+			<a href="#" class="nav-link disabled">Categories</a>
+			<!-- pasif buton -->
+		</nav>
+		<br>
+		<br>
+		<nav class="nav nav-pills">
+			<!-- buda ayri bir  css ozelligi atar.-->
+			<a href="#" class="nav-link active">Home Page</a>
+			<!-- aktif sayfa -->
+			<a href="#" class="nav-link">About</a>
+			<a href="#" class="nav-link">Documents</a>
+			<a href="#" class="nav-link disabled">Categories</a>
+		</nav>
+		<br>
+		<br>
+		<nav class="nav nav-fill">
+			<a href="#" class="nav-link nav-item active">Home Page</a>
+			<!-- aktif sayfa -->
+			<a href="#" class="nav-link  nav-item">About</a>
+			<a href="#" class="nav-link  nav-item">Documents</a>
+			<a href="#" class="nav-link  nav-item disabled">Categories</a>
+			<!-- pasif sayfa -->
+			<!--  nav barin sayfanin kaplamasini istiyorsan nav-fill bootstrapini kullanabilirsin. bunu kullanmak icin nav item lar tanimli olmasi gerekmektedir.-->
+		</nav>
+	</div>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

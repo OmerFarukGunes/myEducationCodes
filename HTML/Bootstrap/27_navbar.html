@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<!-- basic navbar -->
+	<nav class="navbar navbar-expand-sm bg-dark justify-content-start navbar-dark fixed-bottom">
+		<!-- fixed top navbari en uste koyar. bottom ise en alta koyar. -->
+		<!-- bg-dark arka plani renklendirir. navbar-dark ise yazilari dark arkaplana gore ayarlama yapmani saglar. light ise tam tersi acik renge gore bir yazi renklendirmesi yapar.-->
+		<!-- justify content hizalama yapar -->
+		<!-- navbar expand sm boyutu kucuk olana kadar yatay yeteri kadar kuculunca dikey olur-->
+		<a class="navbar-brand" href="">
+			<!-- navbar brand icerigi navbara sigdirmaya yarar -->
+			<img src="https://via.placeholder.com/150" alt="" style="width: 40px;">
+			<!-- sigdirma islemi sonrasi duzenlemelerini sytyle ile css vererek yapabilirsin -->
+		</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a href="" class="nav-link">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Career</a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Blog</a>
+			</li>
+		</ul>
+		<form class="form-inline" action="">
+			<input type="text" class="form-control" placeholder="Search">
+			<button class=" btn btn-success" type="submit">Search</button>
+		</form>
+		<!-- arama butonu bu sekilde yapilir submit olmasinin sebebi bir ileti gondermesi gerekiyor. Collapse yapmak istersen asagidaki collapse divinnin icerisine koyman yeterli olacaktir. -->
+	</nav>
+
+	<nav class="navbar navbar-expand-sm bg-dark justify-content-start navbar-dark fixed-top">
+		<a class="navbar-brand" href="">
+			<img src="https://via.placeholder.com/150" alt="" style="width: 40px;">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#all">  
+			<!-- data toggle collapse ozell;iklerini atar. data target collapsin hangi id uzerinde yapacagini belli eder -->
+			<span class="navbar-toggler-icon"></span></button>
+			<!-- kucultme isleminda seceneklerin dikey olmasini degilde bir kutucuk haline gelmesini ve tikladigin anda acilmasini istiyorsan collapse ozelligini kullanirsin navbarin. -->
+			<div id="all" class="collapse navbar-collapse">
+				<!-- collapse olacaklarin sinifini belli etmemiz gerekmektedir -->
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<!-- bu sekilde hem dropdown olan hemde collapse olan bir menu tasarlayabilirsin -->
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a> 
+						<!-- data toggle aksiyonu verir dropdown toggle ise asagi dogru oku getirir.-->
+						<div class="dropdown-menu">
+							<!-- acilacak olan menu acildi -->
+							<a href="" class="dropdown-item">Education</a>
+							<a href="" class="dropdown-item">Carreer</a>
+							<div class="dropdown-divider"></div>
+							<!-- ayirma islemi yapar. -->
+							<a href="" class="dropdown-item">Partners</a>
+							<!-- mantik hep ayni genel itemler sonra da linkler -->
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Career</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+	</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fg">Click</button>
+	<!-- modal yani bir diger degisle pop up acmak icin buton olusturuldu -->
+	<div class="modal" id="fg">
+		<div class="modal-dialog modal-dialog-centered model-sm">
+			<!-- modal dialogu olusturuldu ve centered sayfanin ortasinda acilmasini sagglar-->
+			<!-- model dialog scrollable ise cok uzun bir yazi olursa modal icerisinde sayfada scorollbar cikmasi yerine 
+			modalda cikamsini saglar -->
+			<!-- modal sm dersen kucuk cihazlar icin modal olusturur. md ve lg ifadeleride bulunmakta -->
+			<div class="modal-content">
+				<!-- icerik olusturudu -->
+				<div class="modal-header">
+					<!-- header olusturuldu -->
+					<h5 class="modal-title">
+						My Modal
+					</h5>
+					 <button type="button" class="close" data-dismiss="modal">X</button>
+					 <!-- kapatma butonu kondu -->
+					 <span>&times</span> 
+					 <!-- span icerisindeki ifade daha kucuk bir carpi isareti yapmani saglar, -->
+				</div>
+				<div class="modal-body">
+					<!-- body yazildi -->
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ad eius animi. Deleniti, odit. Aperiam fuga, suscipit quae aspernatur sunt atque nisi error quasi. Totam nisi culpa ex, numquam deleniti.
+				</div>
+				<div class="modal-footer">
+					<!-- alt kisim uygulandi ve kapama buttonu olusturuldu. -->
+					 <button type="button"  class="btn btn-secondary " data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

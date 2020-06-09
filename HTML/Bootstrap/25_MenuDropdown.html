@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<!-- ul ve li yapisi ile menu boyle yapilir -->
+		<ul class="nav"> 
+			<!-- once navigasyon bari olusturuluyor -->
+			<li class="nav-item"><a href="#" class="nav-link">Home Page</a></li>
+			<!-- barin her bir itemini belirtiyor  ve her itemin linkini ayarliyoruz -->
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a> 
+				<!-- data toggle aksiyonu verir dropdown toggle ise asagi dogru oku getirir.-->
+				<div class="dropdown-menu">
+					<!-- acilacak olan menu acildi -->
+                        <a href="" class="dropdown-item">Education</a>
+                         <a href="" class="dropdown-item">Carreer</a>
+                         <div class="dropdown-divider"></div>
+                         <!-- ayirma islemi yapar. -->
+                         <a href="" class="dropdown-item">Partners</a>
+                         <!-- mantik hep ayni genel itemler sonra da linkler -->
+				</div>
+			</li>
+			<li class="nav-item"><a href="#" class="nav-link">Documents</a></li>
+		</ul>
+		<br>
+		<br>
+
+		<ul class="nav nav-tabs"> 
+			<!-- once navigasyon bari olusturuluyor -->
+			<li class="nav-item active"><a href="#homePage" class="nav-link" data-toggle="tab">Home Page</a></li>
+			<!-- barin her bir itemini belirtiyor  ve her itemin linkini ayarliyoruz -->
+			<li class="nav-item"><a href="#about" class="nav-link" data-toggle="tab">About</a></li>
+			<li class="nav-item"><a href="#documents" class="nav-link" data-toggle="tab">Documents</a></li>
+			<li class="nav-item"><a href="#categories" class="nav-link" data-toggle="tab">Categories</a></li>
+			<!-- bastigin anda nav linklerin birine nereyi isaret ediyorsa oraya gitmesini istiyoruz sayfa icerisinde -->
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="homePage">
+				Home Page
+			</div>
+			<!-- idsi neyse oraya gelmesini saglarsin. -->
+			<div class="tab-pane" id="about">
+				about Page
+			</div>
+			<div class="tab-pane" id="documents">
+				documents Page
+			</div>
+			<div class="tab-pane" id="categories">
+				categories Page
+				<li>1.</li>
+				<li>2.</li>
+				<li>3.</li>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
