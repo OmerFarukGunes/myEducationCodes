@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function myFunction(){
+              document.getElementById("fg").innerHTML="Omer FG";
+		}
+
+	</script>
+</head>
+<body>
+	<h1 id="fg">Omer</h1>
+    <button type="button" onclick="myFunction()">Click</button>
+
+	<h1 id="fg2">Omer</h1>
+    <button type="button" onclick="myFunction2()">Click</button>
+
+	<h1 id="fg3">Omer</h1>
+    <button type="button" onclick="myFunction3()">Click</button>
+    
+    	<script>
+		function myFunction2(){
+              document.getElementById("fg2").innerHTML="Omer FG";
+		}
+	</script>
+	<script src="3_scripts.js"></script>
+	<!-- scriptleri hem head hem body icerisinde tanimlayabilirsin. Ayrica js dosyasini ayri tanimlayip scripte source verrebilir ve kullanabilirsin. -->
+</body>
+</html>

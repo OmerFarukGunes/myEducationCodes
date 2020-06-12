@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="fg"></p>
+	<p id="fg2"></p>
+	<p id="fg3"></p>
+	<p id="fg4"></p>
+	<p id="fg5"></p>
+	<script>
+		var person={name:'Omer', sname:'FG', age:19, fullname:function(){
+			return this.name+' ' + this.sname
+		}
+	};
+     document.getElementById("fg").innerHTML=person['name'];
+        document.getElementById("fg2").innerHTML=person.name;
+           document.getElementById("fg3").innerHTML=person.sname;
+              document.getElementById("fg4").innerHTML=person.age;
+                 document.getElementById("fg4").innerHTML=person.fullname();
+// bu sekilde pythondaki sozluk mantigiyla coklu objeleri tek bir degerde tutabilirsin.
+
+	</script>
+</body>
+</html>

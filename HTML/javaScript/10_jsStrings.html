@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="fg"></p>
+	<p id="fg2"></p>
+	<p id="fg3"></p>
+	<p id="fg4"></p>
+	<p id="fg5"></p>
+ <script>
+ 	var txt='Lorem \'ipsum\' dolor. ';
+ 	 	// tirnak icerisinde tirnak kullanmak icin basinda ve sonunda \ kullanmalisin
+ 	var txt2='Lorem \\ ipsum dolor sit amet.'
+ 	 	// \ da kullanmak icin yan yana iki tane koymalisin
+   var txt3='Lorem \\ ipsum dolor sit amet.'
+ 	 document.getElementById("fg").innerHTML=txt.length;
+ 	 	 // bosluklari dahil ederek hesaplama yapar.
+ 	  document.getElementById("fg2").innerHTML=txt;
+ 	    document.getElementById("fg3").innerHTML=txt2;
+ 	    document.getElementById("fg4").innerHTML=(txt2===txt);
+ 	    // bu sekilde iki sey esitmi diye karsilastirabilirsin eger esitse true degilse false doner
+ 	     document.getElementById("fg5").innerHTML=(txt2===txt3);
+ 
+ 	 
+ </script>
+</body>
+</html>

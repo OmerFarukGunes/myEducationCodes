@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="fg"></p>
+	<p id="fg1"></p>
+	<p id="fg2"></p>
+	<p id="fg3"></p>
+	<p id="fg4"></p>
+	<p id="fg5"></p>
+	<p id="fg6"></p>
+	<p id="fg7"></p>
+	<p id="fg8"></p>
+	<p id="fg9"></p>
+	<p id="fg0"></p>
+	<p id="fg10"></p>
+	<p id="fg11"></p>
+	<p id="fg22"></p>
+	<p id="fg33"></p>
+	<p id="fg44"></p>
+
+	<script>
+		var x=7.5;
+		var y=5;
+		var z=50e5;
+		// 50 den sonra 5 tane 0 verir 10 uzeri 5 demek binevi
+		var n=15e-5
+		// ayni sekilde buda 10 uzeri -5 demektir
+		var k=9999999999999999;
+		// 16 tane 9 yazamazsin maks degere yuvarlama yapar.
+		var m=0.2+0.1
+		 // bu sekilde yaparsan dogru sonucu alamazsin
+		 var l=(0.2*10+0.1*10)/10
+		 // ancak bu sekilde float degerlerin dogru degerini alabilirsin.
+		 var a="10"+"25"
+		 // string oldugu icin ifadeler bunlari yan yana yazar
+		 var b="10"+25
+		 // birinin string olmasi yeterlidir yanyana yazmasi icinm
+		 var c= 10+25+'30'
+		 // burada toplama islemini yapar ancak string ifadeyle yan yana yazar.
+		 var d='25'-"20";
+		 // sadece toplama islemlerinda yanyana koyma yapar onun disinda - * / isleminde sikinti yaratmaz
+		 var f=50/"ayva";
+		 var h=NaN+10;
+		 // Nan da bir number turudur.
+		 var sayi=2;
+		 var txt=''
+		 while (sayi !=Infinity) {
+		 	// infinity alabilecegi maks deger demektir. 
+		 	sayi=sayi*sayi
+		 	txt+=sayi+ '<br>';
+		 }
+		 sayi=2
+		 var j=2/0
+        // sonsuz degeri verir.
+        var q=new Number(2);
+        // bu bir obje olur. sayi degeri bir numberdir.
+        document.getElementById("fg").innerHTML=x+ "<br>" + y;
+		// boslukolu bir sekilde yazmak icin tirnak icerisinde br kullanabilirsin.
+		document.getElementById("fg1").innerHTML=z+ "<br>" + n+ "<br>" +k;
+		document.getElementById("fg2").innerHTML="0.2+0.1= "+m+ "<br>" + l;
+		document.getElementById("fg3").innerHTML=a+ "<br>" +b
+		document.getElementById("fg4").innerHTML=x+y;
+        // toplama islemini burada yapabilirsin eger string bir ifade yoksa.
+        document.getElementById("fg5").innerHTML=c;
+        document.getElementById("fg6").innerHTML=d;
+        document.getElementById("fg7").innerHTML=50/"abc";
+        // ancak tirnak icerisindekiler gercektende bir string ifade oldugundan nan hatasi verir yani none a number der
+        document.getElementById("fg8").innerHTML=isNaN(f);
+        // sana verinin sayi mi degil mi oldugunu true veya false seklinda soyleyen bir fonktur isNan
+        document.getElementById("fg9").innerHTML=typeof h;
+        document.getElementById("fg0").innerHTML=txt
+        document.getElementById("fg10").innerHTML=j
+        document.getElementById("fg11").innerHTML=d.toString(10);
+        // d nin 10 luk tabanda degerini yazar. bunu istersen 16 veya 64 lukte yapabilirsin. default zaten 10 dur.
+         document.getElementById("fg22").innerHTML=typeof q;
+         // deger esitligi karsilastirmasi icin == kullanirsin ama  hem deger hemde tip olarak karsilastirma icin === kullanirsin. Unutmaki 2 objeyi birbiriyle hic bir turlu kiyaslayamazsin her daim false degeri doner.
+        document.getElementById("fg33").innerHTML=(q==sayi)
+        document.getElementById("fg44").innerHTML=(q===sayi)
+    </script>
+
+</body>
+</html>

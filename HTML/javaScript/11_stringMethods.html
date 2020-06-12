@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="fg"></p>
+	<p id="fg2"></p>
+	<p id="fg3"></p>
+	<p id="fg4"></p>
+	<p id="fg5"></p>
+	<p id="fg6"></p>
+	<p id="fg7"></p>
+	<p id="fg8"></p>
+	<p id="fg9"> OmerFg</p>
+	<p id="fg0"></p>
+	<p id="fg11"></p>
+	<p id="fg22"></p>
+	<p id="fg33"></p>
+	<button onclick="myFunc()">Click</button>
+	<script>
+		var ex="like Programming";
+		var pos=ex.indexOf("og");
+		document.getElementById("fg").innerHTML=pos;
+        // ilk index 0 dir. bize kacindi degerde og gectigini gosterir.
+        pos=ex.lastIndexOf("g");
+        // sondan itibaren bulunma durumunu soyler.
+        document.getElementById("fg2").innerHTML=pos;
+        // olmayan ifadeyi arattigin zaman -1 degerini alirsin.
+        pos=ex.search("g");
+        document.getElementById("fg3").innerHTML=pos;
+        // search daha cok complex aramalarda kullanilir. indexof ile ayni gozukur
+        pos=ex.slice(0,4);
+       // belli bir yerden belli biryere kadar almani saglar.
+       document.getElementById("fg4").innerHTML=pos;
+       pos=ex.slice(-11);
+       // sondan almak istersen - kullanman gerek
+       document.getElementById("fg5").innerHTML=pos;
+       pos=ex.substring(0,4);
+       // slice in aynisi aslinda ama bunda - li ifade yok.
+       document.getElementById("fg6").innerHTML=pos;
+       pos=ex.substr(0,4);
+       // 0 baslangic yeridir 4 ise almak istedigin karakter boyutudur. biz 0 dan basla 4 karakter ilerle demis oluyoruz.
+       document.getElementById("fg7").innerHTML=pos;
+       pos=ex.substr(-11);
+       // ayni sekilde tersten basla 11 birim geriye dogru alda diyebilirsin - ile.
+       document.getElementById("fg8").innerHTML=pos;
+       function myFunc(){
+       	var x=document.getElementById("fg9").innerHTML;
+       	var y=x.replace("Omer","Beyza")
+           // Omeri gordugu yerde yer degistirir. Kucuk buyuk harf duyari vardir.
+           document.getElementById("fg9").innerHTML=y.toUpperCase();
+           // touppercase tum harfleri buyuk yapar. tolowecase de ayni mantikta kullanilabilir.
+           var a="  Hello  World    ";
+           alert(a.trim());
+           // trim metodu bosluklari kaldirir. alert ise yukarida bildirim cikarmani saglar.
+       }
+       var x='Omer',y='FG',z=x.concat(' ',y);
+       // concat bosluktan sonra y yi ekler z ye.
+       document.getElementById("fg0").innerHTML=z;
+       var a="Hello  World";
+       document.getElementById("fg11").innerHTML=a.charAt(0)
+
+        // charat istedigin chara ulasmani saglar.
+
+        document.getElementById("fg22").innerHTML=a.charCodeAt(0)
+        // istedigin karakterin code unu yazar
+        document.getElementById("fg33").innerHTML=a[0] 
+        // bu sekilde dizi mantigiylada her bir karaktere ulasabilirsin.
+    </script>
+</body>
+</html>

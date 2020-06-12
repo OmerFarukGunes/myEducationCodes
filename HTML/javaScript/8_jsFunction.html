@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+  <h2>jsFunctions</h2>
+  <p id="fg"></p>
+    <p id="fg2"></p>
+    <p id="fg3"></p>
+     <p id="fg4"></p>
+  <script>
+  	fonks();
+  	var x=myFunction(5,10);
+
+  	function myFunction(x,y){
+          return x*y;
+  	}
+  	 document.getElementById("fg").innerHTML=x;
+  	 document.getElementById("fg2").innerHTML='cevap '+myFunction(5,10);
+   function fonks(){
+   	var car='honda'
+   	
+   	document.getElementById("fg3").innerHTML=typeof car +' '+car;
+   }
+   document.getElementById("fg4").innerHTML=typeof car
+   // fonk icerisindeki var degerine bu sekilde ulasamazsin. cunku fon icerisindeki degisken local dir.
+   
+
+  </script>
+
+</body>
+</html>
