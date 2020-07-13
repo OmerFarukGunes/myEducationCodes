@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>This is a paragraph</p>
+
+     <button class="buton">info</button> 
+  <button class="buton2">set</button> 
+    <button class="buton3">set</button> 
+ <button class="buton4">span</button> 
+    <span style="position: absolute; left: 100px; top: 150px;">This is a span</span>
+
+    <script>
+    $(document).ready(function(){
+            $(".buton").click(function(){
+                 var x=$("p").offset(); 
+                 // p secildi ve sagdan soldan ust ve alttan uzakligi x e atildi
+                 alert("Top: "+x.top+" Left: "+x.left); 
+                 // bu sekilde aralik degerleri yazildi
+             });
+         });
+
+         $(document).ready(function(){
+             $(".buton2").click(function(){
+                 var x=$("p").offset({ top:200,left:200});  
+                 // bu sekilde atamalar yapabilirsin
+             });
+         });
+
+         $(document).ready(function(){
+             $(".buton3").click(function(){
+
+                 $("p").offset(function(n,c){
+                         // n=current index c=current value
+                     newPos = new Object();
+                     // yeni obje olusturuldu
+                     newPos.left=c.left+100;
+                     newPos.top= c.top +100;
+                     newPos.left=c.left+300;
+                     newPos.top= c.top +300;
+                     // yeni atamalar yapildi
+                     return newPos;
+                 });
+            });
+        });
+
+
+       $(document).ready(function(){
+           $(".buton4").click(function(){
+               $("p").offset($("span").offset());
+               // span objesinin offseti p ye atandi.
+           });
+       });
+    </script>
+
+
+
+</body>
+</html>

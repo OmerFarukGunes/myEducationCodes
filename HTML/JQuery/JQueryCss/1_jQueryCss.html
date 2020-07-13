@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+     <p style="background-color: #ff0000;">This is a paragraph.</p>
+    <p style="background-color: #00ff00;">This is a paragraph.</p>
+    <p style="background-color: #0000ff;">This is a paragraph.</p> 
+    <p id="ilk" style="background-color: #ff0000;">This is a paragraph.</p>
+    <p id="ikinci" style="background-color: #00ff00;">This is a paragraph.</p>
+    <p id="ucuncu" style="background-color: #0000ff;">This is a paragraph.</p>
+
+    <button>Return background-color of p</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                 alert("Background color = "+$("p").css("background-color"));
+                alert("Background color = "+$("#ilk").css("background-color")); 
+                alert("Background color = "+$("#ikinci").css("background-color"));
+                 alert("Background color = "+$("#ucuncu").css("background-color"));
+                 // yukaridakilerin tumunun css ozelli[i olan background color ina ulasip alert komutu ile uyari mesaji olarak verdik
+                 $("p").css("background-color","orange");
+                 // tum p leri turuncu yaptik
+                $("p").css({"background-color":"orange","font-size":"200%"});
+                // sadece background colora tek degil bu sekilde tum css ozelliklerine aslinda atama yapabiliriz. ornegin font size ini 2 katina cikarmak gibi.
+                alert("Background color = "+$("#ucuncu").css("background-color","yellow"));
+                 // bu sekilde ucuncu classa ulastik ve sari yaptik css e ulastik background colorina ve biz sadece ona ulasmak degilde sari yapmak istersek eger
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>

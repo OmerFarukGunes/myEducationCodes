@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        #fg{
+           margin: auto;
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="fg"></div>
+    <br>
+    <button>Display the width of div</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                // width degerine ulasilip yazildi
+                alert("Width of div: "+$("#fg").width());
+                // height degeri alindi
+                alert("Width of div: "+$("#fg").height());
+                // bordera kadar olan deger alinir inner degerlerde.
+                alert("Width of div: "+$("#fg").innerWidth());
+                alert("Width of div: "+$("#fg").innerHeight());
+                // border degeri dahil degerdir outerlar.
+                alert("Width of div: "+$("#fg").outerWidth());
+                alert("Width of div: "+$("#fg").outerWidth());
+                // true dedigimiz zaman margin degerlerini de katar.
+                alert("Width of div: "+$("#fg").outerWidth(true));
+                alert("Width of div: "+$("#fg").outerHeight());
+                alert("Width of div: "+$("#fg").outerHeight(true));
+            });
+        });
+    </script>
+</body>
+</html>
