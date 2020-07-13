@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+         p{
+            color: red;
+            margin: 4px;
+        }
+        b{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+     <p></p>
+    
+    <select id="single">
+        <option>Single</option>
+        <option>Single2</option>
+    </select>
+
+    <select id="multiple" multiple="multiple">
+        <option selected="select">Multiple</option>
+        <option>Multiple2</option>
+        <option selected="selected">Multiple3</option>
+    </select> 
+    <p></p>
+
+
+
+    <script>
+         function displayVals(){
+            // id si single olanlar secildi ve degerini atadik
+           var singleValues = $("#single").val();
+           // aynisini multiple icinde yapiyoruz
+            var multipleValues = $("#multiple").val();
+            // join yapmamizin sebebi eklenen ozelligin girdisini saglamak.
+          $("p").html("<b>Single:</b>"+singleValues+"<b>Multiple:</b>"+multipleValues.join(", "));
+         }
+         // select islemleri degistiginda ekrana bastir.
+         $("select").change(displayVals);
+    </script>
+
+
+</body>
+</html>

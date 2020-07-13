@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        button{
+            margin: 4px;
+            cursor: pointer;
+        }
+        input{
+            margin: 4px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Type something and then click or tab out of the input.</p>
+    <input type="text" value="type something">
+
+    <script>
+        //inputu terk ettigim anda fonksiyon calisir.
+        $("input").on("blur",function(){
+            $(this).val(function(i,val){
+                // girilen deger icin taba bastigimiz anda veya input icerisinden ciktigimiz anda buyutecek
+                return val.toUpperCase();
+            });
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <p></p>
+
+    <script>
+        //p etiketi artik para verisinde tutuluyor
+        para=$("p");
+        para
+        // p etiketinin luggagecode propertysini olustrur vw 1234 ata
+            .prop("luggageCode",1234)
+            // belirtilen stringi ekleme yapacak ve return degeri olarak string para.prop taki degeri yani 1234 e u dondurecek
+            .append("The secret luggage code is: ", String(para.prop("luggageCode")),".")
+            // property kaldirildi
+            .removeProp("luggageCode")
+            // kaldirildigi icina rtik undefined donecek
+            .append("Now the secret luggage code is: ", String(para.prop("luggageCode")), ".");            
+    </script>
+
+
+
+</body>
+</html>

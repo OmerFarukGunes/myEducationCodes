@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <style>
+        p{
+            margin: 8px;
+            font-size: 20px;
+            color: blue;
+            cursor: pointer;
+        }
+        b{
+            text-decoration: underline;
+        }
+        button{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+      
+    <!-- <button>Change content of all p elements</button>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p> -->
+
+
+    <!-- <button>Return the content of the p element</button>
+    <p>This is a <b>paragraph</b>.</p> -->
+
+
+
+    <!-- <button>Change the content of the p elements</button>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph.</p>  -->
+
+
+    <p>
+        <b>Click</b> to change the <span id="tag">html</span>
+    </p>
+    <p>
+        to a <span id="text">text</span> node.
+    </p>
+    <p>
+        This <button name="nada">button</button> does nothing.
+    </p>
+
+
+
+
+
+    <script>
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("p").html("Hello <b>world!</b>");
+    //     });
+    // });
+
+    // $(document).ready(function(){
+    //      $("button").click(function(){
+    //         alert($("p").html());
+    //      });
+    //  });
+
+    // $(document).ready(function(){
+    //      $("button").click(function(){
+    //         $("p").html(function (n){
+    //             return "This p element has index: "+n;
+    //         });
+    //      });
+    //  });
+
+        $("p").click(function(){
+            var htmlString = $(this).html();
+            $(this).text(htmlString);
+        });
+
+    </script>
+    
+</body>
+</html>

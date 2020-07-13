@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <style>
+        p{
+            margin: 4px;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+        .blue{
+            color: blue;
+        }
+        .under{
+            text-decoration: underline;
+        }
+        .highlight{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="blue under">Hello</p>
+    <p class="blue under highlight">and</p>
+    <p class="blue under">Again</p>
+    <p class="blue under">say Hello</p>
+   <!-- her bir classa ozel cssler atandi -->
+
+    <script>
+        // $("p").removeClass("blue"); tum blue classlarini kaldirmis oluruz.
+        // $("p:even").removeClass("blue");  sirasi cift olan blue classlari kaldirildi
+        $("p:odd").removeClass("blue"); 
+        // sirasi tek olan blue classlari kaldirildi
+    </script>
+
+
+    
+</body>
+</html>

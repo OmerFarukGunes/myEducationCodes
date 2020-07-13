@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        p{
+            margin: 4px;
+            font-size: 16px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .blue{
+            color: blue;
+        }
+        .highlight{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="blue">Click to toggle (<span>clicks: 0</span>)</p>
+    <p class="blue highlight">highlight (<span>clicks: 0</span>)</p>
+    <p class="blue">on these (<span>clicks: 0</span>)</p>
+    <p class="blue">paragraphs (<span>clicks: 0</span>)</p>
+    
+    <script>
+
+        var count = 0;
+        // her bir p komutu icin fonksiyon acildi
+        $("p").each(function(){
+            // plerin hepsini bir degere atadik
+            var $thisParagraph = $(this);
+            var count = 0;
+            // her bir p den birine tiklandigi zaman
+            $thisParagraph.click(function(){
+                // count artti
+                count++;
+                // p etiketi icinde bulunan span bulunup sayac ekleniyor
+                $thisParagraph.find("span").text("clicks: "+count);
+                // highlight ozelligi her 3 basista bir activ oluyor. obur turlu deactive yapiyor. 
+                // toggle class ozelligi belirlenen degerlerde aktive ozellik ekletmek belirlenen degerlerde deactive ozellik eklemektir. defaultu tek tiklamayla acilir sonra ki tek tiklamayla kapanirdir.
+                $thisParagraph.toggleClass("highlight", count % 3 ===0);
+            });
+        });
+
+    </script>
+</body>
+</html>

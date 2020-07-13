@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <button>Add and remove a property</button> <br> <br>
+    <div></div> -->
+
+    <p><b>Note:</b> Check and uncheck the checkbox and then click the button to refresh content.</p>
+    <button>Check value of attr() and prob()</button>
+    <br><br>
+
+    <input id="chek1" type="checkbox" checked="checked">
+    <label for="check1">Check me</label>
+    <p id="p1"></p>
+
+    <div></div>
+
+
+
+    <script>
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         var $x = $("div");
+        //         $x.prop("color","FF000");
+        //         $x.append("The color property has the following value: "+$x.prop("color"));
+        //         $x.removeProp("color");
+        //         $x.append("<br>Now the color property has the following value: "+$x.prop("color"));
+        //     });
+        // });
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").html("attr('checked'): "+$("input").attr('checked')+ "<br>prop('checked'): "+$("input").prop('checked'));
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
