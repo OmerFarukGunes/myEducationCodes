@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="accept" type="checkbox" value="checks" name="try"> accepted <br/>
+	<input id="check" type="submit" disabled value="send" name="chck"/>
+	<script> 
+		$('#accept').click(function() {
+			if($('#check').is(':disabled')){
+				$('#check').removeAttr('disabled');
+			}
+			else{
+				$('#check').attr('disabled','');
+			}
+		});
+	</script>
+</body>
+</html>

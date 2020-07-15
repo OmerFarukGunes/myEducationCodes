@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<a class="printPage" href="#">print</a>
+	<script>
+		//a print page tiklandiginda
+		$('a.printPage').click(function(){
+                window.print();
+                // browserin diger eventlari return false ile engellenir ki daha saglikli bir print yaptirabilelim.
+                return false;
+		});
+	</script>
+</body>
+</html>

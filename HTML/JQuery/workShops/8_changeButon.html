@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#nonSelected{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			width: 180px;
+			height: 180px;
+			background-color: aqua;
+			border-width: 1px;
+			border-style: dotted;
+			border-color: black;
+			padding: 10px;
+		}
+		#selected{
+			position: absolute;
+			top: 10px;
+			left: 200px;
+			width: 180px;
+			height: 180px;
+			background-color: darkblue;
+			border-width: 1px;
+			border-style: dotted;
+			border-color: black;
+			padding: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="selected">
+		
+	</div>
+	<div id="nonSelected">
+	<button id="btnDefault" onclick="moveBtn(this)" type="button">button</button>
+	<button id="btnPrimary" onclick="moveBtn(this)" type="button">button2</button>
+	<button id="btnDanger"  onclick="moveBtn(this)" type="button">button3</button>
+	</div>
+	<script>
+		function moveBtn(btn){
+			if($(btn).parent().attr("id")=="nonSelected"){
+				// detach komutu butonu siler bellekte tutar ve nereye istersen oraya tutturur,
+				$(btn).detach().appendTo("#selected");
+			}
+			else{
+				$(btn).detach().appendTo("#nonSelected");
+			}
+
+		}
+	</script>
+</body>
+</html>

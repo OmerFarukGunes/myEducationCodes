@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  <style>
+        table {
+            border-collapse: collapse;
+            /*borderları teke düşürür. seperate normal halidir.*/
+            width: 100%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        th {
+            height: 50px;
+            vertical-align: bottom;
+            background-color: indianred;
+            color: whitesmoke;
+        }
+        
+        td {
+            height: 50px;
+            padding: 10px;
+            /*her taraftan boşluk verir*/
+        }
+        
+        tr:hover {
+            /*üzerine geldiğinde*/
+            background-color: aqua;
+        }
+        
+        tr:nth-child(even) {
+            /*çift sırayı doldurur*/
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+	<p>Check to Did the user press the button or not?</p>
+	<form>
+		<input type="text" id="hello" name="">
+	</form>
+	<script>
+		//tusa bastigimiz zaman eventi kontrol edecegimiz bir fonksiyon yazdik.
+		$(document).keypress(function(e){
+			// 13 enter codudur.
+             if(e.which==13){
+             	// bu sekilde sitede sag tik yapip  incele dedigimizde console kismina entera bastigimiz surece mesaj gondermis olacagiz
+             	console.log('You Did');
+             }
+		});
+	</script>
+</body>
+</html>

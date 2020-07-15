@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<select name="" id="deletes">
+		<option value="Red">Red</option>
+		<option value="Blue">Blue</option>
+		<option value="Green">Green</option>
+	</select>
+ <input type="button" value="Delete All" onclick="removeOptions()">
+	<script>
+		function removeOptions(){
+			// once bosaltip sonrasinda yeni bir option ekliyoruz.
+              $("#deletes").empty().append('<option selected="selected" value="black">Black</option>');
+		}
+	</script>
+</body>
+</html>

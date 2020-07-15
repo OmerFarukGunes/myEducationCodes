@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <style>
+  	p span{
+  		text-decoration:underline;
+  	}
+  </style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quis reprehenderit at. Accusamus dolor quisquam numquam doloremque vel vero deserunt, eaque exercitationem nisi, ratione possimus quae ipsa magni sed consequatur!
+	</p>
+	<script>
+		$('p').each(function(){
+           // split sunu gordugun anda kes demektir.
+           // val texti alacak split ose her bir boslukta textin kesilmesini saglayarak kelimeyi atamasini saglar
+           var val=$(this).text().split(' ');
+           $(this).empty().html(function(){
+                 
+              for(i=0;i<val.length:i++){
+              	$(this).append('<span>'+ val[i] +'</span>'+' ');
+              }
+           });
+		});
+
+	</script>
+</body>
+</html>

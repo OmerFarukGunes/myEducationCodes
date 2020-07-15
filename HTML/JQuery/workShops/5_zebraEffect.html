@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.tableCss{
+			width: 500px;
+			margin: auto;
+
+		}
+		table{
+		  width: 100%;
+		  text-align: center;
+		}
+		table tr td{
+               width: 50%;
+               border: 1px solid brown;
+               padding: 10px;
+		}
+		table tr th{
+        border: 1px solid black;
+           padding: 10px;
+		}
+		.zebra{
+			background-color:  grey;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="tableCss">
+		<table>
+		<tr>
+			<th>Student Name</th>
+			<th>grade</th>
+		</tr>
+		<tr>
+			<td>Omer</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>Irem</td>
+			<td>70</td>
+		</tr>
+		<tr>
+			<td>Musti</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Samet</td>
+			<td>20</td>
+		</tr>
+	</table>
+	</div>
+	<script>
+		$(document).ready(function(){
+			// tr nin odd ozelligine zebra classini ekle.
+              $("tr:odd").addClass("zebra");
+		});
+	</script>
+</body>
+</html>

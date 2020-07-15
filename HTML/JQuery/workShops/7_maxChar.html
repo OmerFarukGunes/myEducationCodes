@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style >
+		textarea{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<label>max 15 char</label>
+	<textarea maxlength="15" id="textArea"></textarea>
+    <span id="charCounter">15</span>
+    <script>
+    	var maxLength=15;
+    	 // textaredayken klavyerden elini cektigin anda calisan fonksiyon keyuptir.
+    	$('#textArea').keyup(function(){
+    		// yeni sayimiz counterda tutulacak. hesabi ise this yani text areadaki karakter sayisini max karakterden ciakracaz
+            var counter=maxLength-$(this).val().length;
+            $('#charCounter').text(counter);
+    	});
+    </script>
+</body>
+</html>

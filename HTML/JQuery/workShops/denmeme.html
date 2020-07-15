@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script  src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
+	<script  src='https://code.jquery.com/ui/jquery-ui-git.jss'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 2;
+}
+#Nav h2 {
+  display: table;
+  color: #353535;
+}
+#Nav h2:hover {
+  cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div id="Nav">
+    <h2>About</h2>
+    <h2>Works</h2>
+    <h2>Contacts</h2> 
+    </div>
+    <script>
+    $(document).on('click','#Nav > h2', function () {
+        $(this).animate({ "color": "red" }, 1500);      
+    });
+    </script>
+</div>
+</body>
+</html>

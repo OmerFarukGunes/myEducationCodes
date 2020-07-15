@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style >
+		h1{
+			margin: 10px 0;
+              padding: 0 5px;
+              font-size: 2em;
+              border: 2px double green;
+		}
+	</style>e
+</head>
+<body>
+	<h1 id="myInput">
+      Omer FG
+	</h1>
+	<input type="button" onclick="removeBorder()" value="Delete">
+	<script>
+		function removeBorder(){
+			// .css ile ekleme yapabilirsin bordera 0 verdigimiz anda border kalkmis oldu kaldirmak degilde ozellik ekleme/guncelleme deyapabilirsin
+                $('#myInput').css("border","0")
+		}
+	</script>
+</body>
+</html>

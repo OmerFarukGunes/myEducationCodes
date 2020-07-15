@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>I'm student at <span class="blink">Cukurova University</span></p>
+
+	<script>
+		function blinkText(){
+			// yarim saniyede bir acilip kapanacak
+                 $('.blink').fadeOut(500);
+                   $('.blink').fadeIn(500);
+		}
+		// kod calisir calismaz fonksiyon cagirildi
+		blinkText();
+		// fonksiyon 2 saniyede bir calisacak
+		setInterval(blinkText,2000);
+	</script>
+
+</body>
+</html>

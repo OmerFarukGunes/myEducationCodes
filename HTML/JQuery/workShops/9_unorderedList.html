@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="header">
+	<ul>
+   		<li> <a href="http://www.tepki.com.tr/">C#</a></li>
+		<li><a href="http://www.tepki.com.tr/">C</a></li>
+
+	</div>
+ <input type="button" value="Add New" onclick="newElement()">   
+  <script>
+  	function newElement(){
+  		// header icerisindeki ul tagina yeni bir ekleme yapar.
+  		$("#header ul").append('<li>JQuery</li>');
+  	}
+  </script>
+</body>
+</html>

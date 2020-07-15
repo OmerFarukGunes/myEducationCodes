@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<script  src='https://code.jquery.com/jquery-3.5.1.js'></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <style>
+    	p.center{
+    		text-align: center;
+    		color: blue;
+    	}
+    	p.large{
+    	  font-size: 200%;
+    	}
+    </style>
+</head>
+<body>
+	<p class="center large">This paragraph has 2 css properties</p>
+	<input type="button" value="Delete css" onclick="removeClasses()"/>
+	<script>
+		function removeClasses(){
+			// bu sekilde tum p etiketlerin classlari kaldirilmis olur.
+			$('p').removeClass();
+		}
+	</script>
+</body>
+</html>
