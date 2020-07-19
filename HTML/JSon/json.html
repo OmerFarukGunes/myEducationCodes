@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JSON
+    </title>
+</head>
+<body>
+    <h1>Json education</h1>
+    <script type="text/javascript">
+        var person = {
+            "person1": {
+                "firstname": "Omer",
+                "lastname": "FG",
+                "age": 20,
+                "Hobbies": ["basketball", "football"],
+                //basic seviye  bir dizi bu sekilde obje olarak olusturulabilir.
+                "Havings": [
+                    //dizinin icerisine objeler tanimlanabilir. 
+                    //dizinin icerisindeki bir degere ulasmak icin person.person1.havings[1].type seklinde yol vardir.
+                    {
+                        "Type": "House",
+                        "Price":50000
+                    },
+                    {
+                        "Type": "car",
+                        "Price": 5000
+                    }
+                ]
+            },
+            "person2": {
+                "firstname": "Beyza",
+                "lastname": "G",
+                "age": 19,
+                "Adresses":{
+                    "City": "Mardin",
+                    "Street":"Konak cd"
+                }
+            }
+
+        }
+        //dictionary kavrami burada da json kavrami diye tanimlaniyor. ic ice dictionary yani birden fazla json olusturabilirsin.
+        //buradaki degelere uygulamayi calistirdigin zaman console da person.person1.age gibisinden ulasabilirsin.
+        console.log(person);
+    </script>
+   
+</body>
+</html>
+

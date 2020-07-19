@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	 <h1>Json education</h1>
+	 <div  id="list">
+	 	
+	 </div>
+	 <script>
+	 	//asagidaki json list https://randomuser.me/api buradan alinmistir
+	 	var data= '{"results":[{"gender":"male","name":{"title":"Mr","first":"Aitor","last":"Soler"},"location":{"street":{"number":390,"name":"Calle de La Luna"},"city":"Barcelona","state":"Ceuta","country":"Spain","postcode":71057,"coordinates":{"latitude":"-20.1901","longitude":"-61.1166"},"timezone":{"offset":"-2:00","description":"Mid-Atlantic"}},"email":"aitor.soler@example.com","login":{"uuid":"0e50817a-bd94-4498-94c7-b8a99e923ba0","username":"silverladybug766","password":"dodgers1","salt":"S1JsqLGh","md5":"c658fba90c3f731ad83e6c9927f41e5c","sha1":"f9ba08a83abcac9f74600cf9c31b5d2e068b1744","sha256":"0994a1e0d6d5433a0a007c176dc2df6732f1ab8a7ac197e0623378b02b0d4d83"},"dob":{"date":"1971-11-27T20:11:12.742Z","age":49},"registered":{"date":"2013-04-13T17:41:03.199Z","age":7},"phone":"958-512-760","cell":"629-539-172","id":{"name":"DNI","value":"79236942-F"},"picture":{"large":"https://randomuser.me/api/portraits/men/58.jpg","medium":"https://randomuser.me/api/portraits/med/men/58.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/58.jpg"},"nat":"ES"}],"info":{"seed":"e696419531a2c534","results":1,"page":1,"version":"1.3"}}'
+	 	var dataJson=JSON.parse(data);
+	 	// bu sekilde datayi jsona donusturmus olduk.
+	 	var person=dataJson.results[0];
+	 	// biz json icerisindeki sadece personlari istedigimiz icin ayiklama islemini yaptik.
+	   
+	 	var html=person.name.first + ' '+ person.name.last; 
+	 	// istedigimiz degeri tam olarak aldik
+	 	var output=document.querySelector('#list');
+	 	// output yapilacak yeri bir degere atadik.
+	 	html += '<img src="' + person.picture.thumbnail + '">';
+	 	output.innerHTML=html;
+	 	// sonrasinda string olan degerleri alip output kaynagina yazdirdik.
+	 	var str=JSON.stringify(dataJson);
+	 	// tekrar konsolda basmak icin string ifadeye donusturduk.
+	 	console.log(str);
+	     
+	 	
+
+	 </script>
+</body>
+</html>

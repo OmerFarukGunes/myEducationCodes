@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>JSON
+    </title>
+</head>
+<body>
+	 <h1>Json education</h1>
+	 <script>
+	 	var person={
+                "firstname": "Omer",
+                "last name": "FG",
+                // bunu cagirmaya calistiginda hata alirsin console icerisinde last name i cagirabilmen icin 
+                // person['last name'] yazarsin
+                "car1":"Porsche",
+                "car2":"BMW"
+	 	}
+	 	var cnt=1;
+	 	console.log(person["car"+cnt]);
+	 	cnt++;
+	 	 console.log(person["car"+cnt]);
+	 	 // bu sekilde farkli kullanimlarla json verilerine ulasabilirsin.
+	 </script>
+</body>
+</html>

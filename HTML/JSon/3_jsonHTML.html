@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>JSON
+    </title>
+</head>
+<body>
+	 <h1>Json education</h1>
+	 <div  id="list">
+	 	
+	 </div>
+	 <script>
+	 	var myObj={
+                "friends": [
+                {
+                	  "firtsname":"Omer",
+                     "last name": "FG"             
+                },
+                {
+                	  "firtsname":"Irem",
+                     "last name": "FG"             
+                },
+                {
+                	  "firtsname":"Samet",
+                     "last name": "FG"             
+                },
+                ]
+	 	}
+	 	var users=myObj.friends
+;	 	var html=' '
+	 	for (var i in users) {             
+	 		// html objesine json listemizin tamamini sirayla atiyoruz
+	 	  html+=(Number(i) +1)+'. '+ users[i].firtsname+ ' '+users[i]['last name']+ '<br>'
+	 	}
+	 	// js de oldugu gibi innerhtml ile atamasi yapilmis html degerini web sayfasina yazdiracagiz
+        document.getElementById('list').innerHTML=html;
+
+	 </script>
+</body>
+</html>
