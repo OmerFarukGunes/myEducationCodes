@@ -1,0 +1,12 @@
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        <!--main baslangic olacak tasarim halini veya razor dosyasini ya burada ya imports ta veya direk componentte tanimlarsin-->
+        <!--found eger bulursan sunu yap bulamazsan notfound icerigini yap demektir.-->
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p>Sorry, there's nothing at this address.</p>
+        </LayoutView>
+    </NotFound>
+</Router>

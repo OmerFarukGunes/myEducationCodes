@@ -1,0 +1,22 @@
+﻿@page "/student"
+<h3>Student List</h3>
+<h5>@StudentList</h5>
+<StudentDetail StudentName="OmerFG" OnClick="@Save"></StudentDetail>
+<!--bu sekilde bir baska razor dosyasina  erisim saglaybilirsin.-->
+<!--ve orada tanimlanan degere atamayi direk bir esitlemeyle saglayabiliriz.-->
+<!--onclick adinda save fonksiyonunu  oraya gonderdik-->
+<h5>
+    @saveMessage
+</h5>
+@code {
+    public string StudentList { get; set; }
+    private string saveMessage;
+    protected override async Task OnInitializedAsync()
+    {
+        StudentList = "Omer Faruk Gunes";
+    }
+    private void Save(MouseEventArgs e)
+    {
+        saveMessage = "Saved";
+    }
+}

@@ -1,0 +1,10 @@
+﻿<h3>StudentDetail for @StudentName</h3>
+<button class="btn btn-primary" @onclick="OnClick">Save</button>
+<!--tiklama yapildiginda yani onclick eventi oldugunda diger taraftan alinan onclicki kullanacaz-->
+@code {
+    [Parameter]
+    public string StudentName { get; set; }
+    [Parameter]
+    public EventCallback<MouseEventArgs> OnClick { get; set; }
+    // parameter komutu alinacak degerleri ifade eder.
+}

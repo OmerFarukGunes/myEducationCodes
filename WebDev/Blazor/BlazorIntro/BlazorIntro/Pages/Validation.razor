@@ -1,0 +1,25 @@
+﻿@page "/validation"
+@using BlazorIntro.Models
+
+<h3>Validation</h3>
+
+<EditForm Model="@productAddModal" OnValidSubmit="@HandleSave">
+    <!--productaddmodal turunde bir formumuz ve yapacagi islem handle save olacaktir-->
+    <DataAnnotationsValidator />
+    <!--modelin ustundeki data anootations validatorlari devreye girsin demektir-->
+    <ValidationSummary />
+    <!--kullaniciya hatalari goster  demektir-->
+    <h4>Product Name</h4>
+    <InputText id="productName" @bind-Value="@productAddModal.ProductName" />
+    <!--product modal sayfasindaki product name buradadir ve orasi degisince burasida degisecektir-->
+    <h4>Product Description</h4>
+    <InputText id="description" @bind-Value="@productAddModal.Description" />
+    <button type="submit">Save</button>
+</EditForm>
+@code {
+    ProductAddModal productAddModal = new ProductAddModal();
+    private void HandleSave()
+    {
+        Console.WriteLine("Added");
+    }
+}

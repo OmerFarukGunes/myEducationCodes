@@ -1,0 +1,13 @@
+﻿@page "/Binding"
+<!--birden fazla page olusturabilir uzantilastirabilirsin.-->
+<h3>binding</h3>
+<input @bind="FirstName" />
+<input @bind-value="LastName"  @bind-value:event="oninput"/>
+<h3>@FirstName</h3>
+<h3>@LastName</h3>
+<!--binding dedigin zaman text box icerisinde degeri degistirdigin zaman h3 icinde degismis olacaktir. bind etmek kisacasi budur.-->
+<!--last name de oninput yani input girildigianda bunu yaparken ilk firstname  bunuodagini degistirdigin zaman yapar.-->
+@code {
+    public string FirstName { get; set; } = "Omer";
+    public string LastName { get; set; } = "FG";
+}

@@ -1,0 +1,14 @@
+﻿@page "/counter"
+<!--  page bir rooter gibidir. sayfayi temsil eder.-->
+<h1>Counter</h1>
+<p>Current count: @currentCount</p>
+<!-- et isareti fonksiyonun icerisindeki bir degiskeni temsil eder-->
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<!-- et isareti = blazor  -->
+@code {
+    private int currentCount = 0;
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

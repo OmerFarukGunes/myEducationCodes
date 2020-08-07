@@ -1,0 +1,16 @@
+﻿@page "/detail"
+@page "/detail/{id}"
+<!--:int diye id den sonra eklersen girilen id nin int deger olmasi zorunlulugu kosmus olursun. ve asagida bunu string olarak degil int olarak degistirmen gerekecektir.-->
+<h3>Detail For @Id</h3>
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Id = Id ?? "0";
+        //id varsa onu al yoksa default olarak 0 i al.
+    }
+}

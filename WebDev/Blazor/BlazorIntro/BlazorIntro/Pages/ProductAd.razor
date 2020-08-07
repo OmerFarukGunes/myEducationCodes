@@ -1,0 +1,40 @@
+﻿@page "/productAdd"
+@using BlazorIntro.Models
+@layout MainLayout2
+<!--bu sekilde sayfaya layout vererek asil default verilen layoutu ezebilirsin.-->
+<h3>ProductAd</h3>
+
+<EditForm Model="@productAddModal" OnValidSubmit="@HandleSave">
+    <!--productaddmodal turunde bir formumuz ve yapacagi islem handle save olacaktir-->
+    <DataAnnotationsValidator />
+    <!--modelin ustundeki data anootations validatorlari devreye girsin demektir-->
+    <!--  <ValidationSummary /> -->
+    <!-- summaryi kaldirmamizin nedeni asagida verilen mesajlari zaten gondermesini sagladik ha asagidakileri yazmayip bunu tek yazabilir ve genel mesajlar dahil gonderebilirsin mesaji.-->
+    <div class="form-group">
+        <InputText Placeholder="Product Name" Class="form-control" id="productName" @bind-Value="@productAddModal.ProductName" />
+        <!--inputtext vs birer blazor nesnesiyken div h3 h4 ler html nesnesidirve bizikisinde de bootstrap objeleri kullanilabilir-->
+        <ValidationMessage For="@(()=>productAddModal.ProductName)" />
+    </div>
+    <div class="form-group">
+
+        <InputTextArea Placeholder="Product Description" Class="form-control" id="description" @bind-Value="@productAddModal.Description" />
+        <ValidationMessage For="@(()=>productAddModal.ProductName)" />
+    </div> 
+    <!--product modal sayfasindaki product name buradadir ve orasi degisince burasida degisecektir-->
+    <div class="form-group">
+        <InputSelect Class="form-control" id="categoryId" @bind-Value="@productAddModal.CategoryId">
+            <option>Select</option>
+            <option value="1">Beverages</option>
+            <option value="2">Food</option>
+        </InputSelect>
+        <ValidationMessage For="@(()=>productAddModal.ProductName)" />
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+</EditForm>
+@code {
+    ProductAddModal productAddModal = new ProductAddModal();
+    private void HandleSave()
+    {
+        Console.WriteLine("Added");
+    }
+}
