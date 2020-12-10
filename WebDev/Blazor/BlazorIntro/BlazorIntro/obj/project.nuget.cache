@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V1OiPuNDwn57oT03ZwEwsfoxotDEgaUNdJpxecTNzjFz2/26euCrdkQ41DUaHtLm3iDb1oIiIOLGmLOWnLg1VA==",
+  "dgSpecHash": "DKrQO9mNkAZF+V4QtoJ4vSGtfKuS3L4fgFjHiSsnuTR+fyBuFeniP54DMCJow9S8Q1WB5ANfNI5AGMToDfnivA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\OmerFG\\source\\repos\\BlazorIntro\\BlazorIntro\\BlazorIntro.csproj",
+  "projectFilePath": "D:\\Projects\\myEducationCodes\\WebDev\\Blazor\\BlazorIntro\\BlazorIntro\\BlazorIntro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OmerFG\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\OmerFG\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",

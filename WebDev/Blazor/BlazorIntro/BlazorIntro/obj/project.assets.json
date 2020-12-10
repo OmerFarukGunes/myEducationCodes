@@ -1642,11 +1642,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OmerFG\\source\\repos\\BlazorIntro\\BlazorIntro\\BlazorIntro.csproj",
+      "projectUniqueName": "D:\\Projects\\myEducationCodes\\WebDev\\Blazor\\BlazorIntro\\BlazorIntro\\BlazorIntro.csproj",
       "projectName": "BlazorIntro",
-      "projectPath": "C:\\Users\\OmerFG\\source\\repos\\BlazorIntro\\BlazorIntro\\BlazorIntro.csproj",
+      "projectPath": "D:\\Projects\\myEducationCodes\\WebDev\\Blazor\\BlazorIntro\\BlazorIntro\\BlazorIntro.csproj",
       "packagesPath": "C:\\Users\\OmerFG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OmerFG\\source\\repos\\BlazorIntro\\BlazorIntro\\obj\\",
+      "outputPath": "D:\\Projects\\myEducationCodes\\WebDev\\Blazor\\BlazorIntro\\BlazorIntro\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\OmerFG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1707,7 +1707,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

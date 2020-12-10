@@ -1,0 +1,20 @@
+﻿@page "/login"
+@inject BlazorNorthwindUI.Services.IAuthService AuthService
+
+<h3>Login</h3>
+<EditForm Model="@loginModel" OnInvalidSubmit="@HandleLogin">
+    <div class="form-group">
+        <InputText PlaceHolder="E-Mail" Class="form-control" @bind-Value="@loginModel.Email" />
+    </div>
+    <div class="form-group">
+        <InputText PlaceHolder="Password" type="password" Class="form-control" @bind-Value="@loginModel.Password" />
+    </div>
+    <button class="btn btn-primary" type="submit"> Login</button>
+</EditForm>
+@code {
+    BlazorNorthwindUI.Models.LoginModel loginModel = new BlazorNorthwindUI.Models.LoginModel();
+    private async Task HandleLogin()
+    {
+        await AuthService.Login(loginModel);
+    }
+}

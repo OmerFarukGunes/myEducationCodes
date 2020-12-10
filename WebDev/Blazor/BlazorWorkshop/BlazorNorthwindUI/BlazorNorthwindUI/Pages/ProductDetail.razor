@@ -1,0 +1,69 @@
+﻿@page "/productdetail/{productid:int}"
+
+@using BlazorNorthwindUI.Services
+@using BlazorNorthwindUI.Models
+@using BlazorNorthwindUI.Utilities
+@inject ICategoryService CategoryService
+@inject NavigationManager NavigationManager
+
+@if (product != null)
+{
+    <h3>ProductDetail  for @product.ProductName</h3>
+    <EditForm Model="@product" OnInvalidSubmit="@HandleSave">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="form-group">
+            <InputText PlaceHolder="Product  Name" class="form-control" Id="productName" @bind-Value="@product.ProductName" />
+            <ValidationMessage For="@(()=>product.ProductName)"/>
+
+        </div>
+        <div class="form-group">
+            <InputNumber PlaceHolder="Product  Price" class="form-control" Id="unitPrice" @bind-Value="@product.UnitPrice" />
+            <ValidationMessage For="@(()=>product.UnitPrice)" />
+        </div>
+        <div class="form-group">
+            <InputTextArea PlaceHolder="Description" class="form-control" Id="quantityPerUnit" @bind-Value="@product.QuantityPerUnit" />
+            <!--birden  fazla satirlik alan varsa textarea-->
+            <ValidationMessage For="@(()=>product.UnitPrice)" />
+        </div>
+        <div class="form-group">
+            <InputNumber PlaceHolder="StockNumber" class="form-control" Id="unitsInStock" @bind-Value="@product.UnıtsInStock" />
+            <ValidationMessage For="@(()=>product.UnitPrice)" />
+        </div>
+        <div class="form-group">
+            @if (categories != null)
+            {
+                <InputSelectNumber Class="'form-control" Id="categoryId" @bind-Value="@product.CategoryId">
+                    @foreach (var category in categories)
+                            {
+                        <option value="@category.CategoryId">@category.CategoryName</option>
+                            }
+                </InputSelectNumber>
+            }
+        </div>
+
+        <button class="btn btn-primary" type="submit">Save</button>
+    </EditForm>
+    }
+
+
+            <h3>ProductDetail for @ProductId</h3>
+
+
+            @code {
+                [Parameter]
+                public int ProductId { get; set; }
+
+                ProductViewModel product;
+                CategoryListViewModel[] categories;
+
+        protected override async Task OnInitializedAsync()
+            {
+                product = await ProductService.GetProductById(ProductId);
+                categories = await CategoryService.GetCategories();
+            }
+            private void HandleSave()
+            {
+                ProductService.Save(product);
+            }
+            }
