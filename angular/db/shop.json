@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "laptop",
+      "price": 2599,
+      "categoryId": 1,
+      "description": "msi",
+      "imageUrl": "https://images.unsplash.com/photo-1617294864710-bb97f05457f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": 2,
+      "name": "laptop",
+      "price": 2999,
+      "categoryId": 1,
+      "description": "asus",
+      "imageUrl": "https://images.unsplash.com/photo-1617294864710-bb97f05457f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Elektronik",
+      "price": 3999,
+      "categoryId": 2,
+      "description": "Elektronik",
+      "imageUrl": "https://images.unsplash.com/photo-1617294864710-bb97f05457f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "name": "telefon",
+      "description": "iphone xs max",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/v2-91795-6_large.jpg",
+      "price": "10000",
+      "categoryId": "2",
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bilgisayar"
+    },
+    {
+      "id": 2,
+      "name": "Elektronik"
+    }
+  ]
+}
