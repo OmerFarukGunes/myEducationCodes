@@ -31,6 +31,14 @@
       "price": "10000",
       "categoryId": "2",
       "id": 4
+    },
+    {
+      "name": "denemee",
+      "price": "denemee",
+      "description": "denemee",
+      "categoryId": "2",
+      "imageUrl": "https://www.vestel.com.tr/ProductImages/LargeImagesNew/20261860_r1.jpg",
+      "id": 5
     }
   ],
   "categories": [
