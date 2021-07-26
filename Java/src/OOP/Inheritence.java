@@ -14,6 +14,7 @@ public class Inheritence {
     }
 
 }
+//java da coklu kalitima izin verilmez.
 class Geo{
     private int width;
     private int height;
