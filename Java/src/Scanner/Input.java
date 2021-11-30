@@ -5,9 +5,13 @@ public class Input {
         Scanner tara = new Scanner(System.in);
 
        int a =  tara.nextInt();
+       String b = tara.nextLine();
+        System.out.println(" ");
+       String c = tara.next();
 
-       //nextDouble net veya nextLine ile farkli turlerde deger alinabilir. next().charAt(hangi deger) ile char alinabilir.
         System.out.println(a);
+        System.out.println(b+"1");
+        System.out.println(c+ "sdfgsd");
         System.out.println("mehraba");
     }
 }

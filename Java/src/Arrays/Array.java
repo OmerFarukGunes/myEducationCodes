@@ -4,7 +4,8 @@ public class Array {
     public static void main(String[] args) {
         int nums[] = new int [10];
         int nums2[] = new int [10];
-        int nums3[] = new int [10];
+
+        int nums3[] = {1,2,3,4,5};
         int []nums4= {1,2,3,4,5};
         nums[0]=10;
         for (int i = 0; i<nums2.length;i++)
@@ -29,12 +30,11 @@ public class Array {
         //ustteki kullanim ise deger atamasi yapmaz nuums4 un tuuttuguu degerleri nums3 te tutmaya baslar.
 
 
-        int [][]multiArray = new int [2][3];
+        int [][]multiArray = new int [3][3];
         multiArray[0][1]= 1;
         multiArray[0][2]= 2;
 
         int [][]multiArray2 = {{1,2,3},{4,5,6},{7,8,9}};
-
     }
         private  static void add(int i){
         i++;
