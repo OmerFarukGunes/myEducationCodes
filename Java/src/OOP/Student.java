@@ -1,7 +1,7 @@
 package OOP;
 
 public class Student {
-   private int no;
+    private int no;
     private String name;
     private byte grade;
     private boolean active;

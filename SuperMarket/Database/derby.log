@@ -1,0 +1,11 @@
+Apache Derby Network Server - 10.2.2.0 - (485682) started and ready to accept connections on port 1527 at 2021-08-14 01:35:11.809 GMT 
+----------------------------------------------------------------
+2021-08-14 01:35:12.012 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.2.2.0 - (485682): instance c013800d-017b-424c-7389-ffffd3fdb136
+on database directory D:\Projects\myEducationCodes\SuperMarket\Database\ShopMarketDB  
+
+Database Class Loader started - derby.database.classpath=''
+
+2021-08-14 01:47:24.481 GMT:
+Shutting down instance c013800d-017b-424c-7389-ffffd3fdb136
+----------------------------------------------------------------

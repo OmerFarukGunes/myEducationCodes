@@ -1,8 +1,6 @@
-
-
+package IntroductionToJavaHW;
 import java.util.Scanner;
-
-public class Main {
+public class UpperCase {
 
     public static void main(String[] args) {
 

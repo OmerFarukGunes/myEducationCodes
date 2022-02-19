@@ -10,7 +10,7 @@ public class Static {
     }
 }
 class Officer{
-    private String name;
+    public String name;
     private int salary;
      static private int totalOfficer;
     //static deger nesneye bagli degil sinifa bagli deger olur ve bir degisiklik oldugu zaman tum objelerde gecerli olur.
